@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* layout */
+body > article {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+.wrapper {
+    padding: 1rem;
+
+    /* removes padding on mobile for dropdown menus */
+    &:has(.admin-menu),
+    &:has(.dashboard-menu) {
+        @include mobile {
+            padding: 0;
+        }
+    }
+    &:has(.columns) .admin-col-2,
+    &:has(.columns) .user-col-2 {
+        @include mobile {
+            margin: 0.5rem;
+        }
+    }
+}
+
+/* font */
+
+.font-body {
+    font-family: "Fira Sans", "sans-serif";
+}
+
+.font-headings {
+    font-family: "Montserrat", "sans-serif";
+}
+
+/* hero */
+.hero img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.notification {
+    @include mobile {
+        padding: 0.75rem;
+    }
+}

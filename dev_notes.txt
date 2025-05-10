@@ -1,0 +1,7 @@
+// 15/24 
+
+kept /public/build/manifest.json in the original public directory on server to prevent manifest.json not found error
+
+// 16/24
+
+need to update the public/build folder into the public_html folder, but keep manifset.git sjson in the original public folder location

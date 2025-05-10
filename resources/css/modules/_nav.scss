@@ -1,0 +1,32 @@
+.breadcrumb {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid $light;
+    @include mobile {
+        margin-bottom: 0 !important;
+        font-size: 14px;
+    }
+
+    li a {
+        color: $black-ter;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    li.active {
+        pointer-events: none;
+    }
+}
+
+.navbar.is-light .navbar-brand a.navbar-item:hover,
+a.navbar-item:hover {
+    background-color: initial;
+    color: $black-ter;
+}
+
+.is-ancestor .tile.is-child {
+    transition: all 0.3s ease-out;
+}
+.is-ancestor .tile.is-child:hover {
+    transform: scale(1.025);
+}

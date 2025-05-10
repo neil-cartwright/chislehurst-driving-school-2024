@@ -1,0 +1,28 @@
+.youTubeFrameWrap {
+    width: 100%;
+    position: relative;
+    margin-bottom: 64px;
+    background: $light;
+}
+
+.youTubeFrameWrap::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.youTubeFrameWrap iframe,
+.youTubeFrameWrap > div {
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.youTubeFrameWrap div {
+    display: grid;
+    place-items: center;
+    background: $light;
+}

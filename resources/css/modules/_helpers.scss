@@ -1,0 +1,39 @@
+.overflow-x-scroll {
+    overflow-x: scroll;
+}
+
+.transition {
+    transition: all 0.5s ease;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+.w-half {
+    width: 50%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-three-quarters {
+    width: 75%;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.googleMapsWrap {
+    width: 100%;
+    iframe {
+        width: 100%;
+        min-height: 400px;
+    }
+}

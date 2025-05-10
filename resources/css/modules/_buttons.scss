@@ -1,0 +1,10 @@
+.button-cta {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    @include mobile {
+        font-size: 16px;
+    }
+}

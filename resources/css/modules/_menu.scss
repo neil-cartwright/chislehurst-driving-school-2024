@@ -1,0 +1,60 @@
+.menu-list:not(.menu-has-dropdown) li {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list a.is-active {
+    @include tablet {
+        margin-left: 0.75rem;
+    }
+}
+
+.admin-menu,
+.dashboard-menu {
+    border-right: 1px solid $light;
+    .menu-label {
+        @include mobile {
+            color: $black;
+        }
+        @include mobile {
+            margin: 0.1rem;
+            background: $light;
+            padding: 0.25rem 1rem;
+            cursor: pointer;
+            &:hover {
+                background: $info;
+                color: $white;
+            }
+        }
+        &.is-active {
+            @include mobile {
+                background: $info;
+                color: $white;
+            }
+        }
+    }
+
+    .menu-list {
+        font-size: 14px;
+        margin-bottom: 1rem;
+        @include mobile {
+            padding: 0.25rem 1rem;
+            margin-bottom: 0.5rem;
+        }
+        a.is-active {
+            // background: $info;
+            @include mobile {
+                background: inherit;
+                color: $black-ter;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.book-cover {
+    margin: 2rem 0;
+    img {
+        max-height: 200px;
+    }
+}

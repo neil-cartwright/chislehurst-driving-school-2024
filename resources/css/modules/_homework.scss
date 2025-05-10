@@ -1,0 +1,17 @@
+.homework-column .label {
+    background: $light;
+    padding: 1rem;
+
+    &:hover,
+    &.is-active {
+        text-decoration: underline;
+    }
+
+    span.icon {
+        transition: transform 0.25s ease;
+    }
+
+    &.is-active span.icon {
+        transform: rotate(-180deg);
+    }
+}

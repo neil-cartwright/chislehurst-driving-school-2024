@@ -1,0 +1,16 @@
+.flex-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.spaced-row {
+    margin-top: 1rem;
+    justify-content: center;
+    display: flex;
+    column-gap: 0.25rem;
+
+    img {
+        max-height: 100px;
+    }
+}
