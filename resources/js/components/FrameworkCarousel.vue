@@ -1,5 +1,5 @@
 <template>
-    <Carousel>
+    <Carousel :autoplay="10000" :pause-autoplay-on-hover="true">
         <Slide v-for="{ subject, img, text, alt } in drivingModules" :key="alt">
             <div class="card h-full">
                 <div class="card-header">

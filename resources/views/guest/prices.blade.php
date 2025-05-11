@@ -15,8 +15,8 @@
         </ul>
     </nav>
     <x-wrapper>
-        <div class="columns is-centered mb-4">
-            <div class="column is-8">
+        <div class="columns mb-4">
+            <div class="column is-7">
 
                 <x-card>
 
@@ -24,9 +24,8 @@
                     <x-slot:content>
                         <div class="max-w-[80ch] notification">
                             <p class="mb-3">
-                                Lessons last for <span class="has-text-weight-bold">1 hour and 40 minutes</span>. The
-                                prepayment
-                                price works out at <span class="has-text-weight-bold">£37 per hour</span>.
+                                Lessons last for <span class="has-text-weight-bold">1 hour and 40 minutes</span>, and
+                                are <span class="has-text-weight-bold">just under £40 per hour</span>.
                             </p>
                             <p class="mb-2">I use a <span class="has-text-weight-bold">dual controlled Skoda Fabia</span>
                                 manual
@@ -36,10 +35,32 @@
                                 visibility.
                             </p>
 
-                            <p class="mb-2">I've been a <span class="has-text-weight-bold">fully qualified driving
+                            <p class="mb-4">I've been a <span class="has-text-weight-bold">fully qualified driving
                                     instructor
                                     since 2004</span> and have helped hundreds of people to pass their driving test.</p>
+                            <p class="has-text-weight-bold mb-2 is-size-6">Great value</p>
+                            <p class="mb-2">Once you have started lessons you'll receive <span
+                                    class="has-text-weight-bold">free access
+                                    to 'Theory Test Pro'</span> . You will also
+                                be able to <span class="has-text-weight-bold">log in to this website</span> where there are
+                                lots of learning resources, including class
+                                handouts, interactive quizzes, videos and more. </p>
+                            <p class="mb-2">You can log in to keep track of payments and lesson history. Brief <span
+                                    class="has-text-weight-bold">lesson notes</span>
+                                are also provided for each session, to
+                                help you jog your memory about previous drives.</p>
+                            <p class="mb-2"><span class="has-text-weight-bold">Dashcam footage of test routes</span> is
+                                provided, along
+                                with up to date <span class="has-text-weight-bold">
+                                    google maps of driving
+                                    test routes
+                                </span>. This can help if you're learning with parents or family members.</p>
+                            <p class="mb-2">It matters to me that the driving lessons are enjoyable, positive and
+                                constructive, and that each driver feels they are receiving good value for their lesson
+                                price.
+                            </p>
                             <p class="mb-2">Please call or email for more info. </p>
+
                         </div>
                         <div class="table-container">
                             <table class="table w-full text-center border">
@@ -86,6 +107,13 @@
                         </div>
                     </x-slot:content>
                 </x-card>
+            </div>
+
+            <div class="column is-5">
+                <div class="box">
+                    <h3 class="title is-size-6 is-italic">Here are some of the things you'll learn:</h3>
+                    <framework-carousel></framework-carousel>
+                </div>
             </div>
         </div>
 
