@@ -48,8 +48,8 @@ class VideoController extends Controller
     );
 
     public $road_safety_videos = array(
-        'selective-attention-test'  => 'https://youtube.com/embed/Ahg6qcgoay4',
-        'dealing-with-cyclists' => 'https://youtube.com/embed/OTGRQgw6PDA',
+        'selective-attention-test'  => 'https://youtube.com/embed/xNSgmm9FX2s?si=pYuauJbdpqa1N8sl',
+        'dealing-with-cyclists' => 'https://youtube.com/embed/o9pmw2ckQSU?si=1GwyOK79QCcNp1wf',
         'mistakes' => 'https://youtube.com/embed/B2rFTbvwteo',
         'world-road-safety-ads' => 'https://youtube.com/embed/3KcvMLEYF1w',
         'smart-motorways' => 'https://youtube.com/embed/ANmoyaDsr28',
@@ -81,7 +81,8 @@ class VideoController extends Controller
         'hazard-perception' => 'https://www.youtube.com/embed/v6LG3gObGPM?si=aQwreJH6bg6-z1-y',
         'better-downshifting' => 'https://www.youtube.com/embed/BMhcfbu5WG8?si=jaJYsSSxKJy6T_CS',
         'accelerator-sense' => 'https://www.youtube.com/embed/-z8CveLub2M?si=8tBV6Sb2jaR4P_xr',
-        'steering-technique' => 'https://www.youtube.com/embed/Oiv6V8f5g18?si=bzoYG6j33Msi1-fD'
+        'steering-technique' => 'https://www.youtube.com/embed/Oiv6V8f5g18?si=bzoYG6j33Msi1-fD',
+        'how-to-overtake-a-cyclist' => 'https://youtube.com/embed/4Q2h5abv_AM?si=FELRdXIcGwGiFGqg'
     );
 
     /**

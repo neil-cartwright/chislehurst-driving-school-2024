@@ -18,9 +18,10 @@
         rel="stylesheet">
 
     <!-- Font awesome -->
-    <link href="{{ asset('/font-awesome/css/fontawesome.css') }}" rel="stylesheet">
-    <link href="{{ asset('/font-awesome/css/brands.css') }}" rel="stylesheet">
-    <link href="{{ asset('/font-awesome/css/solid.css') }}" rel="stylesheet">
+    <link href="{{ asset('/font-awesome/css/fontawesome.css') }}" rel="stylesheet" media="print"
+        onload="this.media='all'">
+    <link href="{{ asset('/font-awesome/css/brands.css') }}" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="{{ asset('/font-awesome/css/solid.css') }}" rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- Scripts -->
     @stack('scripts-before')

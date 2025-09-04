@@ -66,11 +66,11 @@
                         <label class="label mr-2">Payment era</label>
                         <div class="control">
                             <label for="2023">
-                                Summer 2024
+                                Summer 2025
                                 <input
                                     type="radio"
                                     name="payment_era"
-                                    value="20241"
+                                    value="20251"
                                     id="2023"
                                     class="mr-2"
                                     v-model="formData.payment_era"
@@ -78,12 +78,12 @@
                                 />
                             </label>
                             <label for="2024">
-                                Winter 2024
+                                Winter 2025
                                 <input
                                     type="radio"
                                     name="payment_era"
                                     v-model="formData.payment_era"
-                                    value="20242"
+                                    value="20252"
                                     id="2024"
                                 />
                             </label>
@@ -276,8 +276,8 @@
                         }}</span>
                         at
                         <span class="has-text-weight-bold"
-                            >&pound;{{ formData.lesson_charge }}</span
-                        >
+                            >&pound;{{ formData.lesson_charge }}
+                        </span>
                         <span v-if="formData.paymentTaken">
                             and
                             <span class="has-text-weight-bold"
@@ -356,6 +356,12 @@ const selectedLessonDuration = computed(() => {
     return formData.value.lesson_rate == 50 ? 0.833335 : 1.66667;
 });
 
+//lesson rate is not updating
+
+const selectedLessonRate = computed(() => {
+    return formData.value.lesson_rate;
+});
+
 const selectedLessonCharge = computed(() => {
     const rate = formData.value.lesson_rate;
     const era = formData.value.payment_era;
@@ -363,13 +369,13 @@ const selectedLessonCharge = computed(() => {
 
     switch (rate) {
         case 50:
-            result = 32.5;
+            result = 34;
             break;
         case 100:
-            result = era == 20241 ? 63 : 65;
+            result = era == 20251 ? 65 : 68;
             break;
         case 500:
-            result = era == 20241 ? 60 : 62;
+            result = era == 20251 ? 62 : 65;
             break;
         case "test":
             result = 110;
@@ -394,7 +400,7 @@ const computedAmountPaymentTaken = computed(() => {
 
 const formData = ref({
     customer_id: props.updates.lesson.customer_id,
-    payment_era: 20241,
+    payment_era: 20251,
     lesson_date: selectedLessonDate,
     lesson_duration: selectedLessonDuration,
     lesson_charge: selectedLessonCharge,

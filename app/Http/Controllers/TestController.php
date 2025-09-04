@@ -49,4 +49,10 @@ class TestController extends Controller
 
         return view('admin.customers.tests')->with('customers', $customers);
     }
+
+    public function tests(Lesson $lesson)
+    {
+        $tests = $lesson->where('lesson_rate', 'test')->get();
+        return $tests;
+    }
 }

@@ -92,6 +92,7 @@ class LessonController extends Controller
         $lesson->customer_id = $request->input('customer_id');
         $lesson->lesson_date = $request->input('lesson_date');
         $lesson->lesson_duration = $request->input('lesson_duration');
+        $lesson->lesson_rate = $request->input('lesson_rate');
         $lesson->lesson_charge = $request->input('lesson_charge');
         $lesson->amountPaymentTaken = $request->input('amountPaymentTaken');
         $lesson->paymentTaken = $request->input('paymentTaken');

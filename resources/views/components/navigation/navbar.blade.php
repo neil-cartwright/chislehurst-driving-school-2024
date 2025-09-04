@@ -55,9 +55,11 @@
             @guest
                 <a href="/reviews" class="navbar-item ml-2">Reviews</a>
                 <a href="/prices" class="navbar-item ml-2">Prices</a>
-                <a href="/contact" class="navbar-item ml-2">
+                <a href="/contact" class="navbar-item ml-2">Contact</a>
+                <hr class="is-hidden-desktop">
+                <a href="/quiz" class="navbar-item ml-2 is-hidden-desktop">Quizzes</a>
+                <a href="/tests/routes" class="navbar-item ml-2 is-hidden-desktop">Test routes</a>
 
-                    Contact</a>
             @endguest
             <hr class="is-hidden-desktop">
             <div class="navbar-item">

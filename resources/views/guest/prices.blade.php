@@ -18,15 +18,59 @@
         <div class="columns mb-4">
             <div class="column is-7">
 
-                <x-card>
+                <x-card class="card-content-p-4">
 
-                    <x-slot:title>Prices Spring 2025</x-slot:title>
-                    <x-slot:content>
-                        <div class="max-w-[80ch] notification">
-                            <p class="mb-3">
-                                Lessons last for <span class="has-text-weight-bold">1 hour and 40 minutes</span>, and
-                                are <span class="has-text-weight-bold">just under £40 per hour</span>.
-                            </p>
+                    <x-slot:title>Prices Autumn / Winter 2025</x-slot:title>
+                    <x-slot:content class="p-0">
+
+                        <div class="table-container">
+                            <table class="table w-full text-center border">
+                                <thead>
+                                    <tr>
+                                        <td>Package</td>
+                                        <td></td>
+                                        <td>Price</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="tag has-text-weight-bold is-light">Lessons Mon-Sat</span>
+                                        </td>
+                                        <td>1 hr 40 mins</td>
+                                        <td>£68</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="tag has-text-weight-bold is-light">5 Lessons</span></td>
+                                        <td class="is-flex is-align-items-center">(5 <i aria-hidden="true"
+                                                class="fas fa-times has-text-grey-light mx-1"></i>)
+                                            1 hr 40 mins
+                                        </td>
+                                        <td>£325</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="tag has-text-weight-bold is-light">Test day hire &amp;
+                                                lesson</span></td>
+                                        <td>Up to 3hrs</td>
+                                        <td>£110</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="tag has-text-weight-bold is-light">Motorway Driving</span></td>
+                                        <td>2 hours</td>
+                                        <td>£90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="tag has-text-weight-bold is-light">Sundays</span>
+                                        </td>
+                                        <td>1 hr 40 mins</td>
+                                        <td>£75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="max-w-[80ch]">
+
+
                             <p class="mb-2">I use a <span class="has-text-weight-bold">dual controlled Skoda Fabia</span>
                                 manual
                                 transmission car. The vehicle has low emissions, using stop/start technology. It's small,
@@ -38,6 +82,17 @@
                             <p class="mb-4">I've been a <span class="has-text-weight-bold">fully qualified driving
                                     instructor
                                     since 2004</span> and have helped hundreds of people to pass their driving test.</p>
+                            <div class="notification is-info">
+                                <p class="title is-size-6">Hourly rate?</p>
+                                <p class="mb-2"><span class="has-text-weight-bold">Lessons are 1 hour 40 minutes</span>.
+
+                                </p>
+                                <p> This works out at <span class="has-text-weight-bold">£39 per hour</span> if you pay for
+                                    5
+                                    lessons, or <span class="has-text-weight-bold">£40.80 per hour</span> if you'd prefer to
+                                    pay each week
+                                    as you progress.</p>
+                            </div>
                             <p class="has-text-weight-bold mb-2 is-size-6">Great value</p>
                             <p class="mb-2">Once you have started lessons you'll receive <span
                                     class="has-text-weight-bold">free access
@@ -62,49 +117,7 @@
                             <p class="mb-2">Please call or email for more info. </p>
 
                         </div>
-                        <div class="table-container">
-                            <table class="table w-full text-center border">
-                                <thead>
-                                    <tr>
-                                        <td>Package</td>
-                                        <td></td>
-                                        <td>Price</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><span class="tag has-text-weight-bold is-light">Single Lesson</span></td>
-                                        <td>1 hr 40 mins</td>
-                                        <td>£65</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="tag has-text-weight-bold is-light">5 Lessons</span></td>
-                                        <td class="is-flex is-align-items-center">(5 <i aria-hidden="true"
-                                                class="fas fa-times has-text-grey-light mx-1"></i>)
-                                            1 hr 40 mins
-                                        </td>
-                                        <td>£310</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="tag has-text-weight-bold is-light">Test day hire &amp;
-                                                lesson</span></td>
-                                        <td>Up to 3hrs</td>
-                                        <td>£110</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="tag has-text-weight-bold is-light">Motorway Driving</span></td>
-                                        <td>2 hours</td>
-                                        <td>£85</td>
-                                    </tr>
 
-                                </tbody>
-                            </table>
-
-                            <p class="mb-2">
-                                Payments can be made online via bank transfer and must be
-                                cleared prior to the lessons.
-                            </p>
-                        </div>
                     </x-slot:content>
                 </x-card>
             </div>

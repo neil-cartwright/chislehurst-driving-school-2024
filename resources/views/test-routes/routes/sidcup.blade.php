@@ -9,9 +9,14 @@
 <div class="column is-6">
     <h1 class="title is-6 has-text-centered">via New Eltham</h1>
     <div class="box youTubeFrameWrap">
-        <iframe src="https://www.google.com/maps/d/embed?mid=18sMIhn69BjtJ_3C2n4rePG4S8bktG1VD" width="640"
-            height="480"></iframe>
-
+        @auth
+            <iframe src="https://www.google.com/maps/d/embed?mid=18sMIhn69BjtJ_3C2n4rePG4S8bktG1VD" width="640"
+                height="480"></iframe>
+        @else
+            <div>
+                Please sign up for details
+            </div>
+        @endauth
     </div>
     @auth
         <video-modal video="sidcup-test-via-new-eltham"

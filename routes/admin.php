@@ -123,4 +123,5 @@ Route::middleware('admin')->group(function () {
      */
     Route::post('/admin/customer/test', [TestController::class, 'store']);
     Route::get('/admin/customers/tests/index', [TestController::class, 'index']);
+    // Route::get('/admin/customers/tests/all', [TestController::class, 'tests']);
 });

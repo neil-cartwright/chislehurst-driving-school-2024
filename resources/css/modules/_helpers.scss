@@ -37,3 +37,9 @@
         min-height: 400px;
     }
 }
+
+.card-content-p-4 {
+    .card-content {
+        padding: 16px;
+    }
+}

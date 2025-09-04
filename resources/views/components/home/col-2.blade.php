@@ -2,19 +2,19 @@
 
 <div class="content">
 
-    <notification-component class="is-warning">
+    {{-- <notification-component class="is-warning">
         <p class="has-text-weight-bold mb-2">
             Driving lesson availability:
             {{ $carbon::now()->addHour()->format('jS F Y') }}
         </p>
         <p>
-            Spaces are available for the end of May and June. If you'd like to enquire about booking driving lessons
+            Spaces are currently available for June. If you'd like to enquire about booking driving lessons
             please email <a href="mailto:neil@chislehurstdrivingschool.co.uk"><span
                     style="word-break:break-word">neil@chislehurstdrivingschool.co.uk</span></a> or call/text on <a
                 href="tel:07917042740">07917 042 740</a>.<br />
             I always reply to emails within 24 hours. If you call please leave a voicemail and I will call back asap.
         </p>
-    </notification-component>
+    </notification-component> --}}
 
     <div class="notification">
         <h1 class="is-uppercase title is-size-6 has-text-weight-bold has-text-black-ter">
@@ -42,7 +42,7 @@
             <p>
                 <span class="has-text-weight-bold">Reliable</span> and <span
                     class="has-text-weight-bold">punctual</span> fully qualified instructor from just <span
-                    class="has-text-weight-bold">£37 per hour</span>.
+                    class="has-text-weight-bold">£39 per hour</span>.
             </p>
             <p>
                 <span class="has-text-weight-semibold">Parents</span> are welcome to sit
