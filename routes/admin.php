@@ -14,6 +14,7 @@ use App\Http\Controllers\HomeworkController;
 use App\Http\Controllers\NotesController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\TimeOffController;
 
 
 
@@ -40,6 +41,12 @@ Route::middleware('admin')->group(function () {
     Route::get('/admin/lesson/{id}/edit', [LessonController::class, 'edit'])->name('admin.lessons.edit');
     Route::post('/admin/lesson/update/{id}', [LessonController::class, 'update']);
     Route::post('/admin/lesson/notes/{id}', [LessonController::class, 'notes']);
+
+    /**
+     * TimeOff Controller
+     */
+    Route::get('/admin/lessons/weeklySummary/{year}', [TimeOffController::class, 'weeklySummary']);
+
 
     /**
      * Find Lessons

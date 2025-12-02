@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-
 use App\Models\Lesson;
 use App\Models\Customer;
 
@@ -16,6 +14,7 @@ class LessonController extends Controller
      */
     public function index()
     {
+
         $lessons = Lesson::orderBy('lesson_date', 'desc')->simplePaginate(20);
 
         return view('admin.lessons.index', compact(['lessons']));

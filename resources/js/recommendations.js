@@ -6,6 +6,12 @@ const recommendations = [
             "Neil is hands down the best driving instructor I’ve ever had! His experience really showed in every lesson, and he made everything easy to follow and stress-free. He was patient, calm, and always had a positive attitude, which made a huge difference for me. With his support and clear instructions, I felt well-prepared and passed my test on the first try. I’d highly recommend Neil to anyone looking for a top-notch instructor!",
     },
     {
+        name: "Alex Rochester",
+        area: "Chislehurst",
+        comment:
+            "Neil’s calm and supportive teaching style made learning to drive a genuinely positive experience. I highly recommend him to anyone looking for a reliable, friendly, and professional instructor!",
+    },
+    {
         name: "Jack Garnham",
         area: "New Eltham",
         comment:

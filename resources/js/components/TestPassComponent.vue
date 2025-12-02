@@ -1,7 +1,7 @@
 <template>
     <section>
         <Carousel>
-            <Slide v-for="(testPass, idx) in drivingTestPasses" :key="testPass">
+            <Slide v-for="(testPass, idx) in lastFifteenPasses" :key="testPass">
                 <div class="notification">
                     <div class="flex-container">
                         <img
@@ -33,8 +33,13 @@
 
 <script setup>
 import drivingTestPasses from "../test-passes.js";
+import { computed } from "vue";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+
+const lastFifteenPasses = computed(() => {
+    return drivingTestPasses.slice(0, 20);
+});
 </script>
 
 <style scoped>
