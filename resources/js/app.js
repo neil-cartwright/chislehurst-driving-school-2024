@@ -34,6 +34,7 @@ import SearchNotes from "./components/SearchNotes.vue";
 import HighlightedText from "./components/HighlightedText.vue";
 import VideoModal from "./components/VideoModal.vue";
 import AddTestDate from "./components/AddTestDate.vue";
+import SummaryComponent from "./components/SummaryComponent.vue";
 // routes app
 // import SidcupRoundaboutsTabs from "./components/routes-app/SidcupRoundaboutsTabs.vue";
 
@@ -68,6 +69,7 @@ createApp({})
     // .component("SidcupRoundaboutsTabs", SidcupRoundaboutsTabs)
     .component("VideoModal", VideoModal)
     .component("AddTestDate", AddTestDate)
+    .component("SummaryComponent", SummaryComponent)
     .mount("#app");
 
 import { selectElementContents } from "./helpers";

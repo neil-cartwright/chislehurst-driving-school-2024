@@ -121,6 +121,15 @@
                     href="/admin/costs/averages/2024">Monthly
                     averages</a>
             </li>
+
+            <li>
+                <span class="icon">
+                    <i class="fa fa-search"></i>
+                </span>
+                <a class="{{ request()->routeIs('admin.summaries') ? 'is-active' : '' }}"
+                    href="/admin/lessons/summary/2025">Summaries
+                </a>
+            </li>
         </ul>
     </div>
 
