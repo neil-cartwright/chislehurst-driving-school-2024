@@ -3,7 +3,7 @@
         class="form mb-4"
         autocomplete="off"
         @submit.prevent="handleUpdate"
-        @change="(formDirty = true), (errors = null)"
+        @change="((formDirty = true), (errors = null))"
     >
         <div class="card">
             <header class="card-header">
@@ -66,7 +66,7 @@
                         <label class="label mr-2">Payment era</label>
                         <div class="control">
                             <label for="2023">
-                                Summer 2025
+                                2025
                                 <input
                                     type="radio"
                                     name="payment_era"
@@ -78,7 +78,7 @@
                                 />
                             </label>
                             <label for="2024">
-                                Winter 2025
+                                2026
                                 <input
                                     type="radio"
                                     name="payment_era"
@@ -369,13 +369,13 @@ const selectedLessonCharge = computed(() => {
 
     switch (rate) {
         case 50:
-            result = 34;
+            result = 35;
             break;
         case 100:
-            result = era == 20251 ? 65 : 68;
+            result = era == 20251 ? 68 : 72;
             break;
         case 500:
-            result = era == 20251 ? 62 : 65;
+            result = era == 20251 ? 65 : 69;
             break;
         case "test":
             result = 110;
@@ -421,7 +421,7 @@ const handleUpdate = () => {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },
-            }
+            },
         )
         .then((response) => {
             /* reset form */

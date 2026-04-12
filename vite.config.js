@@ -1,17 +1,20 @@
-import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from "vite";
+import laravel from "laravel-vite-plugin";
+import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
+    // https://dev.to/adamgaskins/laravel-vite-upgrading-dependencies-leads-to-cors-error-id2
+    server: {
+        cors: {
+            origin: /^https?:\/\/(?:(?:[^:]+\.)?localhost|chislehurst-driving-school-2024\.test|127\.0\.0\.1|\[::1\])(?::\d+)?$/,
+        },
+    },
     plugins: [
         laravel({
-            input: [
-                'resources/css/app.scss',
-                'resources/js/app.js',
-            ],
+            input: ["resources/css/app.scss", "resources/js/app.js"],
             refresh: true,
         }),
-        vue({ 
+        vue({
             template: {
                 transformAssetUrls: {
                     base: null,
@@ -20,9 +23,9 @@ export default defineConfig({
             },
         }),
     ],
-    resolve: { 
+    resolve: {
         alias: {
-            vue: 'vue/dist/vue.esm-bundler.js',
+            vue: "vue/dist/vue.esm-bundler.js",
         },
     },
 });

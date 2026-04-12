@@ -17,7 +17,8 @@ class ContactController extends Controller
 
         $request->validate([
             'name' => ['required'],
-            'telephone' => ['required']
+            'email' => ['required'],
+            'enquiry' => ['required']
         ]);
 
         $name = $request->input('name');
@@ -28,7 +29,7 @@ class ContactController extends Controller
 
         try {
             Mail::to('neil@chislehurstdrivingschool.co.uk')->send(new ContactEmail($name, $email, $telephone, $address, $enquiry));
-            return redirect()->back()->with('message', 'Thanks. Your email has been sent. I usually reply within 24 hours.');
+            return redirect()->back()->with('message', 'Thanks. Your email has been sent. I usually reply within a few hours.');
         } catch (Exception $error) {
             return redirect()->back()->with('message', 'There was an error. Please call, text or email directly.');
         }

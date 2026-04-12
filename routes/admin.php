@@ -15,6 +15,7 @@ use App\Http\Controllers\NotesController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\SummaryController;
+use App\Http\Controllers\EnquiryController;
 
 
 
@@ -65,9 +66,18 @@ Route::middleware('admin')->group(function () {
     Route::post('/admin/customer/store', [CustomerController::class, 'store']);
     Route::get('/admin/customer/{id}', [CustomerController::class, 'show'])->name('admin.customers.show');
     Route::post('/admin/customer/destroy/{id}', [Customercontroller::class, 'destroy']);
-
     Route::get('/admin/customers/customer/search', [CustomerController::class, 'search'])->name('admin.customers.search');
     Route::post('/admin/find', [CustomerController::class, 'find']);
+
+    /**
+     * Enquiries
+     */
+    Route::get('/admin/enquiries', [EnquiryController::class, 'index'])->name('admin.enquiries');
+    Route::get('/admin/enquiries/create', [EnquiryController::class, 'create']);
+    Route::post('/admin/enquiries/store', [EnquiryController::class, 'store']);
+    Route::get('/admin/enquiry/edit/{id}', [EnquiryController::class, 'edit']);
+    Route::post('/admin/enquiry/update/{id}', [EnquiryController::class, 'update']);
+    Route::post('/admin/enquiry/destroy/{id}', [EnquiryController::class, 'destroy']);
 
 
     /** 

@@ -15,7 +15,6 @@ const getSummary = () => {
             if (response) {
                 summary.value = response.data;
             }
-            console.log(response.data);
         })
         .catch((error) => {
             error.value = error;
@@ -61,19 +60,14 @@ onMounted(() => {
     <div class="columns is-multiline">
         <div class="column is-half" v-for="week in summary.weeks">
             <div class="card mb-2">
-                <header class="card-header is-size-8">
+                <header class="card-header">
                     <div class="card-header-title">
-                        <span
-                            class="tag mr-1 has-text-weight-semibold"
-                            :class="
-                                week.status == 'short_week'
-                                    ? 'is-danger'
-                                    : 'is-success'
-                            "
-                        >
+                        <span class="tag mr-1 has-text-weight-semibold">
                             Week
                             {{ week.week_number }} </span
-                        ><span class="tag mr-1 has-text-weight-bold">
+                        ><span
+                            class="tag mr-1 has-text-weight-bold is-hidden-mobile"
+                        >
                             {{ dayjs(week.start_date).format("DD/MM/YYYY") }}
                         </span>
 
@@ -81,14 +75,20 @@ onMounted(() => {
                             ><i class="fa-solid fa-umbrella-beach"></i
                         ></span>
                         <span
-                            class="tag mr-1"
+                            class="tag mr-1 is-info"
                             v-if="week.days_off['days_short'] > 0"
                         >
                             Days off:&nbsp;{{
                                 week.days_off["days_short"]
                             }}</span
                         >
-                        <span class="tag"
+                        <span
+                            class="tag"
+                            :class="
+                                week.total_lessons < 15
+                                    ? 'is-warning'
+                                    : 'is-success'
+                            "
                             >{{ week.total_lessons }} lessons</span
                         >
                     </div>
@@ -98,14 +98,14 @@ onMounted(() => {
                         >
                     </div>
                 </header>
-                <div class="card-content">
+                <div class="card-content overflow-x-scroll">
                     <table class="table is-fullwidth is-striped">
                         <tbody>
                             <tr v-for="day in week.days" class="is-flex">
                                 <td style="width: 125px" class="has-text-right">
-                                    <span class="has-text-weight-bold">{{
-                                        day.day_name.slice(0, 3)
-                                    }}</span
+                                    <span
+                                        class="has-text-weight-bold is-size-6 is-size-7-mobile"
+                                        >{{ day.day_name.slice(0, 3) }}</span
                                     >&nbsp;
                                     <span
                                         class="has-text-weight-light is-size-7"

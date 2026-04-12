@@ -35,6 +35,7 @@ import HighlightedText from "./components/HighlightedText.vue";
 import VideoModal from "./components/VideoModal.vue";
 import AddTestDate from "./components/AddTestDate.vue";
 import SummaryComponent from "./components/SummaryComponent.vue";
+import EnquiryMessage from "./components/EnquiryMessage.vue";
 // routes app
 // import SidcupRoundaboutsTabs from "./components/routes-app/SidcupRoundaboutsTabs.vue";
 
@@ -70,6 +71,7 @@ createApp({})
     .component("VideoModal", VideoModal)
     .component("AddTestDate", AddTestDate)
     .component("SummaryComponent", SummaryComponent)
+    .component("EnquiryMessage", EnquiryMessage)
     .mount("#app");
 
 import { selectElementContents } from "./helpers";

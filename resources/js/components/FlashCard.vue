@@ -11,12 +11,12 @@
             <div class="card">
                 <div class="card-content">
                     <slot />
-                    <figcaption
+                    <div
                         class="has-text-centered has-background-warning p-2 mt-2"
                     >
                         <div class="is-italic mr-2">{{ type }}</div>
                         <div class="has-text-weight-bold">{{ alt }}</div>
-                    </figcaption>
+                    </div>
                 </div>
             </div>
         </div>

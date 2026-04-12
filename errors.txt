@@ -1,0 +1,9 @@
+// I ran npm audit fix
+// there was an error: 
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://[::1]:5173/@vite/client.
+
+// I ran rm -rf node_modules package-lock.json
+// I ran npm install
+
+// then further errors and the original problem remains when npm run dev
+// no issue when server not running

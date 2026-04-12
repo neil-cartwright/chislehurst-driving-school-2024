@@ -1,5 +1,4 @@
 <div>
-
     <aside class="menu mt-2 mb-4">
 
         <x-navigation.side-menu></x-navigation.side-menu>
@@ -10,6 +9,9 @@
 
         <p class="menu-label">Driving tests</p>
         <ul class="menu-list">
+            <li class="has-text-weight-bold"><a target="_blank" href="https://readytopass.campaign.gov.uk/"><i
+                        class="fa-solid fa-arrow-up-right-from-square has-text-grey-light mr-4"></i>Ready to pass?</a>
+            </li>
             <li><a target="_blank" href="https://www.gov.uk/learn-to-drive-a-car"><i
                         class="fa-solid fa-arrow-up-right-from-square has-text-grey-light mr-4"></i>Learn
                     to drive a car</a>
@@ -21,14 +23,6 @@
                         class="fa-solid fa-arrow-up-right-from-square has-text-grey-light mr-4"></i>Book a
                     practical test</a>
             </li>
-            <li><a target="_blank" href="https://www.gov.uk/change-driving-test"><i
-                        class="fa-solid fa-arrow-up-right-from-square has-text-grey-light mr-4"></i>Change a
-                    practical test</a>
-            </li>
-            <li><a href="https://www.gov.uk/government/speeches/car-practical-driving-test-waiting-times"
-                    target="_blank"><i
-                        class="fa-solid fa-arrow-up-right-from-square has-text-grey-light mr-4"></i>Practical test
-                    waiting times</a></li>
         </ul>
 
     </aside>

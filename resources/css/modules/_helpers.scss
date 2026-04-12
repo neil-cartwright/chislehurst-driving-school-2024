@@ -18,6 +18,10 @@
     width: 100%;
 }
 
+.w-80ch {
+    max-width: 80ch;
+}
+
 .h-full {
     height: 100%;
 }
@@ -42,4 +46,8 @@
     .card-content {
         padding: 16px;
     }
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
 }

@@ -19,7 +19,7 @@
 
         <div class="message is-light">
             <div class="message-header">
-                Driving lesson framework
+                Driving lesson structure
             </div>
             <div class="message-body">
                 <p>Here are some of the common subjects you'll cover during your lessons.</p>

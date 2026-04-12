@@ -25,7 +25,7 @@ class SummaryController extends Controller
         // Group lessons by date
         $lessonsByDate = Lesson::whereYear('created_at', $year)
             ->get()
-            ->groupBy(fn($l) => Carbon::parse($l->created_at)->toDateString());
+            ->groupBy(fn($l) => Carbon::parse($l->lesson_date)->toDateString());
 
         $totalWeeks = Carbon::create($year, 12, 28)->isoWeeksInYear();
         $weeks = [];

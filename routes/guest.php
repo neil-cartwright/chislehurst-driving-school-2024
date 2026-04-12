@@ -15,19 +15,26 @@ Route::get('/contact', function () {
 
 Route::post('/contact', [ContactController::class, 'store']);
 
+Route::get('/faq', function () {
+    return view('guest.faq');
+});
 
 Route::get('/driving-lessons', function () {
     return view('guest.framework.index');
-});
-
-Route::get('/areas-covered', function () {
-    return view('guest.areas-covered');
 });
 
 Route::get('/reviews', function () {
     return view('guest.reviews');
 });
 
+Route::get('/areas', function () {
+    return view('guest.driving-lessons');
+});
+
 Route::get('/news', [NewsController::class, 'index']);
 
-Route::get('/driving-lessons-in-{area}', [AreaController::class, 'show']);
+Route::get('/driving-lessons/{area}', [AreaController::class, 'show']);
+
+Route::get('/parallel-parking', function () {
+    return view('guest.parking');
+});

@@ -20,56 +20,84 @@
 
                 <x-card class="card-content-p-4">
 
-                    <x-slot:title>Prices Autumn / Winter 2025</x-slot:title>
+                    <x-slot:title>Prices 2026</x-slot:title>
                     <x-slot:content class="p-0">
 
                         <div class="table-container">
-                            <table class="table w-full text-center border">
+                            <table class="is-size-6-mobile table w-full text-center border">
                                 <thead>
+
                                     <tr>
-                                        <td>Package</td>
-                                        <td></td>
-                                        <td>Price</td>
+                                        <td><span class="has-text-weight-semibold">Lessons are 1 hour 40
+                                                minutes</span>
+                                        </td>
+                                        <td class="is-hidden-mobile"></td>
+                                        <td><span class="is-hidden-mobile">Price</span></td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><span class="tag has-text-weight-bold is-light">Lessons Mon-Sat</span>
+                                        <td>
+                                            <span class="tag has-text-weight-bold is-light">
+                                                50 min lessons*
+                                            </span>
                                         </td>
-                                        <td>1 hr 40 mins</td>
-                                        <td>£68</td>
+                                        <td class="is-hidden-mobile">50 mins</td>
+                                        <td>£38</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="tag has-text-weight-bold is-light">1hr and 40 min lessons
+                                            </span>
+                                        </td>
+                                        <td class="is-hidden-mobile">1 hr 40 mins</td>
+                                        <td>£72</td>
                                     </tr>
                                     <tr>
-                                        <td><span class="tag has-text-weight-bold is-light">5 Lessons</span></td>
-                                        <td class="is-flex is-align-items-center">(5 <i aria-hidden="true"
-                                                class="fas fa-times has-text-grey-light mx-1"></i>)
+                                        <td><span class="tag has-text-weight-bold is-light">5
+                                                Lessons</span></td>
+                                        <td class="is-flex is-align-items-center is-hidden-mobile">(5 <i aria-hidden="true"
+                                                class="fas fa-times mx-1"></i>)
                                             1 hr 40 mins
                                         </td>
-                                        <td>£325</td>
+                                        <td>£345</td>
                                     </tr>
                                     <tr>
-                                        <td><span class="tag has-text-weight-bold is-light">Test day hire &amp;
-                                                lesson</span></td>
-                                        <td>Up to 3hrs</td>
-                                        <td>£110</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="tag has-text-weight-bold is-light">Motorway Driving</span></td>
-                                        <td>2 hours</td>
-                                        <td>£90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="tag has-text-weight-bold is-light">Sundays</span>
+                                        <td><span class="tag has-text-weight-bold is-light">10
+                                                Lessons</span></td>
+                                        <td class="is-flex is-align-items-center is-hidden-mobile">(10 <i aria-hidden="true"
+                                                class="fas fa-times mx-1"></i>)
+                                            1 hr 40 mins
                                         </td>
-                                        <td>1 hr 40 mins</td>
-                                        <td>£75</td>
+                                        <td>£670</td>
                                     </tr>
+
+                                    <tr>
+                                        <td><span class="tag has-text-weight-bold is-light">Test
+                                                day hire +
+                                                1hr</span></td>
+                                        <td class="is-hidden-mobile">Fully insured car hire</td>
+                                        <td>£125</td>
+                                    </tr>
+
+
                                 </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3" class="is-size-7 has-text-centered">There
+                                            are no booking fees.<br class="is-hidden-tablet" /> Unused lessons are fully
+                                            refunded.<br class="is-hidden-tablet" /> 24 hours
+                                            cancellation
+                                            policy.<br />
+                                            *50 minute lessons available depending on time of day and location
+                                        </td>
+
+                                    </tr>
+                                </tfoot>
                             </table>
 
                         </div>
                         <div class="max-w-[80ch]">
-
 
                             <p class="mb-2">I use a <span class="has-text-weight-bold">dual controlled Skoda Fabia</span>
                                 manual
@@ -82,35 +110,47 @@
                             <p class="mb-4">I've been a <span class="has-text-weight-bold">fully qualified driving
                                     instructor
                                     since 2004</span> and have helped hundreds of people to pass their driving test.</p>
-                            <div class="notification is-info">
-                                <p class="title is-size-6">Hourly rate?</p>
-                                <p class="mb-2"><span class="has-text-weight-bold">Lessons are 1 hour 40 minutes</span>.
 
+
+                            <div class="notification is-info">
+                                <h3 class="has-text-weight-bold">Hourly rate?</h3>
+                                <p><span class="has-text-weight-bold">Lessons are 1 hour 40 minutes</span>.</p>
+                                <p>If you'd like to
+                                    compare hourly rates with other driving schools, this works out <span
+                                        class="has-text-weight-bold">£40 per hour</span>
+                                    if you book 10 lessons,
+                                    £41.40 per hour if you book 5 lessons, or £43.20 per hour if you're paying each time.
                                 </p>
-                                <p> This works out at <span class="has-text-weight-bold">£39 per hour</span> if you pay for
-                                    5
-                                    lessons, or <span class="has-text-weight-bold">£40.80 per hour</span> if you'd prefer to
-                                    pay each week
-                                    as you progress.</p>
+                                </p>
                             </div>
-                            <p class="has-text-weight-bold mb-2 is-size-6">Great value</p>
+
+                            <div class="notification is-light mb-4">
+                                <h2 class="has-text-weight-bold">Save money by passing first time</h2>
+                                <p>In <span class="has-text-weight-bold">2025</span> 17 out of 23 customers passed at the
+                                    first attempt. The other 6 passed 2nd time.<br />
+                                    In <span class="has-text-weight-bold">2024</span> 20 out of 25 passed first time
+                                </p>
+                            </div>
+
+                            <p class="has-text-weight-bold is-size-6 mb-2">Great value</p>
                             <p class="mb-2">Once you have started lessons you'll receive <span
                                     class="has-text-weight-bold">free access
                                     to 'Theory Test Pro'</span> . You will also
                                 be able to <span class="has-text-weight-bold">log in to this website</span> where there are
                                 lots of learning resources, including class
                                 handouts, interactive quizzes, videos and more. </p>
-                            <p class="mb-2">You can log in to keep track of payments and lesson history. Brief <span
+                            <p class="mb-4">You can log in to keep track of payments and lesson history. Brief <span
                                     class="has-text-weight-bold">lesson notes</span>
                                 are also provided for each session, to
-                                help you jog your memory about previous drives.</p>
+                                help you track progress.</p>
                             <p class="mb-2"><span class="has-text-weight-bold">Dashcam footage of test routes</span> is
                                 provided, along
                                 with up to date <span class="has-text-weight-bold">
                                     google maps of driving
                                     test routes
                                 </span>. This can help if you're learning with parents or family members.</p>
-                            <p class="mb-2">It matters to me that the driving lessons are enjoyable, positive and
+                            <p class="mb-2">It matters to me that the driving lessons are enjoyable,
+                                positive and
                                 constructive, and that each driver feels they are receiving good value for their lesson
                                 price.
                             </p>

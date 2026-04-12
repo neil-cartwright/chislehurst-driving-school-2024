@@ -4,8 +4,8 @@
             <!-- select category -->
             <div class="select mr-2" v-if="formData.allFrom !== 'month'">
                 <select name="category" v-model="formData.category">
-                    <option v-for="c in categories">
-                        <span class="is-capitalized">{{ c }}</span>
+                    <option v-for="c in categories" class="is-capitalized">
+                        {{ c }}
                     </option>
                 </select>
             </div>
@@ -139,7 +139,7 @@
                         <td class="whitespace-nowrap">
                             {{
                                 dayjs(result.date_of_purchase).format(
-                                    formatReadable
+                                    formatReadable,
                                 )
                             }}
                         </td>

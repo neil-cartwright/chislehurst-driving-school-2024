@@ -50,6 +50,14 @@
                 <a class="{{ request()->routeIs('admin.customers.tests.index') ? 'is-active' : '' }}"
                     href="/admin/customers/tests/index" class="level-item">Test bookings</a>
             </li>
+
+            <li>
+                <span class="icon">
+                    <i class="fa-regular fa-comment"></i>
+                </span>
+                <a class="{{ request()->routeIs('admin.customers.enquiries') ? 'is-active' : '' }}"
+                    href="/admin/enquiries" class="level-item">Enquiries</a>
+            </li>
         </ul>
     </div>
 
@@ -127,7 +135,7 @@
                     <i class="fa fa-search"></i>
                 </span>
                 <a class="{{ request()->routeIs('admin.summaries') ? 'is-active' : '' }}"
-                    href="/admin/lessons/summary/2025">Summaries
+                    href="/admin/lessons/summary/2026">Summaries
                 </a>
             </li>
         </ul>

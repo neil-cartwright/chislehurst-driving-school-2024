@@ -27,7 +27,7 @@
                 <div class="menu">
                     <p class="menu-label">Site links</p>
                     <ul class="menu-list">
-                        <li><a href="/areas-covered">Areas covered</a></li>
+                        <li><a href="/areas">Areas</a></li>
                         <li><a href="/contact">Contact</a></li>
                         <li><a href="/prices">Prices</a></li>
                         <li><a href="/driving-lessons">Driving Lessons</a></li>

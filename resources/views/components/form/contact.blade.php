@@ -1,3 +1,5 @@
+@props(['area' => 'chislehurst'])
+
 @if (Session::has('message'))
     <div class="notification has-background-warning">
         <p>{{ Session::get('message') }}</p>
@@ -5,14 +7,15 @@
 @endif
 
 <x-card>
-    <x-slot:title>Get in touch</x-slot:title>
+    <x-slot:title>Get in touch: &nbsp; <span class="has-text-weight-light is-italic">I usually reply within a few
+            hours</span></x-slot:title>
     <x-slot:content>
         <form action="/contact" method="post">
 
             {{ csrf_field() }}
 
             <div class="field">
-                <label class="label">Name</label>
+                <label class="label">Name <span class="has-text-weight-light is-size-7">* required</span></label>
                 <div class="control has-icons-left">
                     <input class="input" type="text" placeholder="Name" name="name" value="{{ old('name') }}"
                         autofocus required>
@@ -30,8 +33,8 @@
             <div class="field">
                 <label class="label">Address</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input" value="{{ old('address') }}" type="text" placeholder="Address"
-                        name="address">
+                    <input class="input" value="{{ old('address') }}" type="text"
+                        placeholder="{{ ucwords(str_replace('-', ' ', $area)) }}" name="address">
                     <span class="icon is-small is-left">
                         <i class="fas fa-home"></i>
                     </span>
@@ -42,7 +45,7 @@
                 <label class="label">Telephone</label>
                 <div class="control has-icons-left">
                     <input class="input" type="tel" placeholder="Telephone" name="telephone"
-                        value="{{ old('telephone') }}" required>
+                        value="{{ old('telephone') }}">
                     <span class="icon is-small is-left">
                         <i class="fas fa-phone"></i>
                     </span>
@@ -55,7 +58,7 @@
             </div>
 
             <div class="field">
-                <label class="label">Email</label>
+                <label class="label">Email <span class="has-text-weight-light is-size-7">* required</span></label>
                 <div class="control has-icons-left has-icons-right">
                     <input class="input" type="email" placeholder="Email" name="email" value="{{ old('email') }}"
                         required>
@@ -69,12 +72,18 @@
             </div>
 
             <div class="field">
-                <label class="label">Message</label>
+                <label class="label">Message <span class="has-text-weight-light is-size-7">* short message
+                        required</span></label>
                 <div class="control">
-                    <textarea class="textarea" placeholder="Message" value="{{ old('enquiry') }}" name="enquiry">
-           </textarea>
-
+                    <textarea class="textarea" placeholder="Message" value="{{ old('enquiry') }}" name="enquiry" required></textarea>
                 </div>
+                @if ($errors->has('enquiry'))
+                    <p class="has-text-danger">
+                        @foreach ($errors->get('enquiry') as $message)
+                            {{ $message }}
+                        @endforeach
+                    </p>
+                @endif
             </div>
 
             <div class="field is-grouped">

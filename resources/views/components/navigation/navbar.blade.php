@@ -1,7 +1,7 @@
 <nav class="navbar" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item font-headings is-size-4 is-size-6-mobile" href="{{ url('/') }}">
-            <span class="icon is-large has-text-success mr-2">
+        <a class="navbar-item font-headings is-size-5" href="{{ url('/') }}">
+            <span class="icon is-large has-text-success mr-1">
                 <i class="fas fa-road"></i>
             </span>
             Chislehurst Driving School
@@ -26,14 +26,14 @@
 
             @guest
                 <a href="tel:07917042740" class="navbar-item font-body">
-                    <span class="icon is-medium has-text-info">
+                    <span class="icon is-medium has-text-info is-hidden-desktop-only">
                         <i class="fas fa-phone"></i>
                     </span>
                     <span>
                         07917 042 740
                     </span></a>
                 <a href="mailto:neil@chislehurstdrivingschool.co.uk" class="navbar-item font-body ">
-                    <span class="icon is-medium has-text-info">
+                    <span class="icon is-medium has-text-info is-hidden-desktop-only">
                         <i class="fas fa-envelope"></i>
                     </span>
                     <span>neil@chislehurstdrivingschool.co.uk</span></a>
@@ -53,27 +53,38 @@
                 </div>
             @endauth
             @guest
-                <a href="/reviews" class="navbar-item ml-2">Reviews</a>
+
+                <a href="/faq" class="navbar-item ml-2">FAQ</a>
                 <a href="/prices" class="navbar-item ml-2">Prices</a>
                 <a href="/contact" class="navbar-item ml-2">Contact</a>
-                <hr class="is-hidden-desktop">
-                <a href="/quiz" class="navbar-item ml-2 is-hidden-desktop">Quizzes</a>
-                <a href="/tests/routes" class="navbar-item ml-2 is-hidden-desktop">Test routes</a>
 
-            @endguest
-            <hr class="is-hidden-desktop">
-            <div class="navbar-item">
-                <div class="buttons">
-                    @guest
-                        <a href="/login" class="button is-text">
-                            Sign in
-                        </a>
-                    @endguest
-                    @auth
-                        <a href="/logout" class="button is-text">Sign out</a>
-                    @endauth
+                <div class="navbar-item has-dropdown is-hoverable is-hidden-desktop-only">
+                    <a class="navbar-link ml-2">
+                        More
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="/reviews" class="navbar-item">Reviews</a>
+                        <a href="/quiz" class="navbar-item">Quizzes</a>
+                        <a href="/signs/warning-signs" class="navbar-item">Road signs</a>
+                        <a href="/tests/routes" class="navbar-item ">Test routes</a>
+                    </div>
                 </div>
             </div>
+
+        @endguest
+        <hr class="is-hidden-desktop">
+        <div class="navbar-item">
+            <div class="buttons">
+                @guest
+                    <a href="/login" class="button is-success has-text-weight-bold">
+                        Sign in
+                    </a>
+                @endguest
+                @auth
+                    <a href="/logout" class="button is-text">Sign out</a>
+                @endauth
+            </div>
         </div>
+    </div>
     </div>
 </nav>

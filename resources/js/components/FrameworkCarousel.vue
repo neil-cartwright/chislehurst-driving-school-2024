@@ -15,7 +15,8 @@
         </Slide>
 
         <template #addons>
-            <navigation />
+            <Navigation />
+            <Pagination />
         </template>
     </Carousel>
 </template>
@@ -30,5 +31,10 @@ img {
     object-position: center 40%;
     width: 100%;
     height: 250px;
+}
+.carousel {
+    /* --vc-pgn-border-radius: 20px; */
+    --vc-pgn-height: 4px;
+    --vc-pgn-width: 4px;
 }
 </style>

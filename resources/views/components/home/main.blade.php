@@ -28,9 +28,8 @@
                             Driving Lesson discount packages
                         </h2>
                         <p>
-                            If you're motivated to learn you can save money by
-                            booking a package of lessons. You can pay via bank
-                            transfer if you like.
+                            You can save money by booking a package of lessons. You can pay via bank
+                            transfer.
                             <a href="/prices">Find out more about pricing</a>.
                         </p>
                     </div>
@@ -67,13 +66,13 @@
 
                     <div class="content">
                         <h2 class="title font-headings is-size-6">
-                            Highly experienced <a target="_blank"
+                            Experienced <a target="_blank"
                                 href="https://www.gov.uk/government/publications/driving-instructor-grades-explained/driving-instructor-grades-explained">
                                 grade A</a> driving instructor
                         </h2>
                         <p>
-                            I've been a full-time driving instructor/teacher for 20
-                            years. In that time I've taught over five hundred people
+                            I've been a full-time driving instructor for 20
+                            years. In that time I've taught hundreds of people
                             how to drive.
                         </p>
                     </div>

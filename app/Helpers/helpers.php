@@ -25,7 +25,9 @@ function replaceHyphenWith_($string)
 /* averages.blade.php */
 function getAverage($n)
 {
-    return round(array_sum($n) / count($n));
+    if ($n) {
+        return round(array_sum($n) / count($n));
+    }
 }
 
 function roundArraySum($n)

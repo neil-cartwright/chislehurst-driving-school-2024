@@ -93,3 +93,32 @@
         @endauth
     </div>
 </div>
+
+
+<div class="column is-6">
+    <h1 class="title is-6 has-text-centered">Via Warren Avenue</h1>
+    <div class="box youTubeFrameWrap">
+        @auth
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Ec8jhApPntXxAox3nf5xWOoLtyjmlKI&ehbc=2E312F&noprof=1"
+                width="640" height="480"></iframe>
+        @else
+            <div>
+                Please sign up for details
+            </div>
+        @endauth
+    </div>
+</div>
+
+<div class="column is-6">
+    <h1 class="title is-6 has-text-centered">Via Beckenham Hill Rd</h1>
+    <div class="box youTubeFrameWrap">
+        @auth
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YoSRjuTesbMcXYy5iufdDiXw231TIec&ehbc=2E312F&noprof=1"
+                width="640" height="480"></iframe>
+        @else
+            <div>
+                Please sign up for details
+            </div>
+        @endauth
+    </div>
+</div>

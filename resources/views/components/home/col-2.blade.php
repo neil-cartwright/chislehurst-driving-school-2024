@@ -1,36 +1,23 @@
 @inject('carbon', 'Carbon\Carbon')
 
-<div class="content">
-
-    {{-- <notification-component class="is-warning">
-        <p class="has-text-weight-bold mb-2">
-            Driving lesson availability:
-            {{ $carbon::now()->addHour()->format('jS F Y') }}
-        </p>
-        <p>
-            Spaces are currently available for June. If you'd like to enquire about booking driving lessons
-            please email <a href="mailto:neil@chislehurstdrivingschool.co.uk"><span
-                    style="word-break:break-word">neil@chislehurstdrivingschool.co.uk</span></a> or call/text on <a
-                href="tel:07917042740">07917 042 740</a>.<br />
-            I always reply to emails within 24 hours. If you call please leave a voicemail and I will call back asap.
-        </p>
-    </notification-component> --}}
+<main class="content">
 
     <div class="notification">
         <h1 class="is-uppercase title is-size-6 has-text-weight-bold has-text-black-ter">
             An independent driving school based in Chislehurst
         </h1>
         <div>
-            <p>
-                <span class="has-text-weight-bold">Experienced driving instructor</span> in Chislehurst,
-                BR7 and teaching across South East London,
+            <p> <span class="has-text-weight-bold">Experienced driving
+                    instructor</span> in Chislehurst,
+                BR7 and working across South East London,
                 <span class="has-text-weight-light"> including: Petts Wood BR5, Bickley and Bromley BR1, Sidcup DA14,
                     Eltham, New Eltham and Mottingham SE9, Grove Park and Lee SE12. </span>
             </p>
             <p>
-                <span class="has-text-weight-bold">Enjoyable</span> and <span
-                    class="has-text-weight-bold">professional</span> driving lessons in an
+                <span class="has-text-weight-bold">Professional</span> and <span
+                    class="has-text-weight-bold">enjoyable</span> driving lessons in an
                 <span class="has-text-weight-bold">eco-friendly dual-controlled vehicle</span>.
+
             </p>
 
             <p>
@@ -41,8 +28,8 @@
 
             <p>
                 <span class="has-text-weight-bold">Reliable</span> and <span
-                    class="has-text-weight-bold">punctual</span> fully qualified instructor from just <span
-                    class="has-text-weight-bold">£39 per hour</span>.
+                    class="has-text-weight-bold">punctual</span>
+                fully qualified instructor from just <span class="has-text-weight-bold">£40 per hour</span>.
             </p>
             <p>
                 <span class="has-text-weight-semibold">Parents</span> are welcome to sit
@@ -52,11 +39,14 @@
         </div>
     </div>
 
+    <div class="is-hidden-tablet mb-3">
+        <recommendations-component></recommendations-component>
+    </div>
 
     <div class="notification is-light" id="all-you-need">
-        <h6 class="is-uppercase title is-size-6 has-text-weight-bold has-text-black-ter">
-            All you need to pass your driving test
-        </h6>
+        <h2 class="is-uppercase title is-size-6 has-text-weight-bold has-text-black-ter">
+            Everything you need to pass your driving test
+        </h2>
         <p>
             You can <span class="has-text-weight-bold"> keep track of your lessons online.</span> Login for
             course handouts, videos, lesson notes,
@@ -84,19 +74,8 @@
         </div>
     </div>
 
-    <notification-component class="is-warning">
-        <p class="has-text-weight-bold mb-2">
-            Practical driving test availability:
-        </p>
-        <p>The current practical driving test waiting list is 22-24 weeks locally. Consider getting your theory test
-            done as soon as possible. You cannot book a practical test until the
-            theory test has been completed. Full theory test support is also provided during lessons. <a
-                href="https://www.gov.uk/government/speeches/car-practical-driving-test-waiting-times">Read the
-                government statement regarding driving test waiting times</a> </p>
-    </notification-component>
-
-    <div class="box">
-        <figure class="image is-pulled-right img-thumbnail is-hidden-mobile">
+    <div class="notification">
+        <figure class="image is-pulled-right img-thumbnail">
             <img src="{{ asset('img/photos/neil-cartwright-thumb.jpg') }}"
                 alt="Neil Cartwright. Driving instructor in Chislehurst, South East London" class="image" />
             <figcaption class="has-text-success">
@@ -104,31 +83,42 @@
             </figcaption>
         </figure>
 
-        <div class="">
-            <p>
+        <div>
+            <h2 class="title has-text-weight-bold is-size-6 is-uppercase">Structured driver training</h2>
+            <p class="is-italic">
+
                 &ldquo;My aim is to equip new drivers with the
                 essential skills they need to stay safe in a wide
                 variety of road and traffic conditions. Lessons are
                 focused on achieving a predefined goal and on
                 gaining valuable driving experience. A positive
                 attitude towards other road users is strongly
-                encouraged. 90% of my customers pass their test on
-                either the first or second attempt.&rdquo;
+                encouraged. Last year 17 out of 23 customers passed their test at the first attempt.&rdquo;
             </p>
         </div>
     </div>
 
-    <div class="notification is-warning">
-        <h6 class="title is-size-6 has-text-weight-bold is-uppercase">
+    <div class="notification">
+        <h2 class="title is-size-6 has-text-weight-bold is-uppercase">
             Eco friendly driving tuition vehicle
-        </h6>
+        </h2>
         <p>
-            I use a nearly new manual gearbox Skoda Fabia training vehicle. It is
-            equipped with stop/start technology and has very low co2
+            I use a manual gearbox Skoda Fabia training vehicle. It has stop/start technology and has very low co2
             emmisions. The vehicle is dual controlled, with climate control air
             conditioning. The vehicle has lots of varied seating positions and is great for people of all shapes and
-            sizes. I use the same TomTom 52 Sat Nav as driving
-            examiners on tests.
+            sizes.
         </p>
     </div>
-</div>
+
+    <notification-component class="is-light">
+        <p class="has-text-weight-bold mb-2">
+            Practical driving test availability: {{ $carbon::now()->format('l jS M Y') }}
+        </p>
+        <p>The current practical driving test waiting list is 22-24 weeks locally. Consider getting your theory test
+            done as soon as possible. You cannot book a practical test until the
+            theory test has been completed. Full theory test support is also provided during lessons. </p>
+        <p>For more info please read the <a href="/faq" class="has-text-weight-bold">frequently asked questions</a>
+            page.</p>
+    </notification-component>
+
+</main>

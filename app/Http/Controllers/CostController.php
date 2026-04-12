@@ -157,7 +157,7 @@ class CostController extends Controller
     }
 
     /* averages */
-    public function averages($year = '2024')
+    public function averages($year = '2025')
     {
         $from = date($year . '-04-01');
         $to = Carbon::create($from)->addYear()->format('Y-m-d');
@@ -182,7 +182,6 @@ class CostController extends Controller
                 }
             }
         }
-
         return view('admin.costs.averages')->with(['the_year' => $year, 'lessons' => $lessons, 'costs' => $costs]);
     }
 

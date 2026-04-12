@@ -1,13 +1,17 @@
 <template>
     <div class="notification is-light">
         <div class="is-flex is-justify-content-space-between">
-            <h6 class="animated is-uppercase">Recommended</h6>
-            <a
-                class="button is-small is-info"
-                @click="next"
-                title="Read some more recommendations"
-                >Read more >></a
-            >
+            <h6 class="animated is-uppercase has-text-weight-bold">
+                Customer reviews
+            </h6>
+            <div>
+                <a
+                    class="button is-small is-info"
+                    @click="next"
+                    title="Read some more recommendations"
+                    >read more &gt;&gt;</a
+                >
+            </div>
         </div>
         <br />
         <transition name="fade">

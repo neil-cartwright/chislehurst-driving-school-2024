@@ -1,12 +1,52 @@
 const drivingTestPasses = [
     {
+        name: "Olivia",
+        datePassed: "March 2026",
+        testCentre: "Sidcup",
+        firstTime: false,
+        area: "New Eltham",
+        alt: "",
+        img: "/img/test-passes/thumbnails/webp/olivia-guyver.webp",
+        altText: "",
+    },
+    {
+        name: "Charles",
+        datePassed: "March 2026",
+        testCentre: "Sidcup",
+        firstTime: false,
+        area: "Mottingham",
+        alt: "",
+        img: "/img/test-passes/thumbnails/webp/charles-murphy.webp",
+        altText: "",
+    },
+    {
+        name: "Kaitlin",
+        datePassed: "January 2026",
+        testCentre: "Sidcup",
+        firstTime: true,
+        area: "New Eltham",
+        alt: "",
+        img: "/img/test-passes/thumbnails/webp/kaitlin-spencer.webp",
+        altText: "",
+    },
+    {
+        name: "Poppy",
+        datePassed: "December 2025",
+        testCentre: "Bromley",
+        firstTime: true,
+        area: "Grove Park",
+        alt: "",
+        img: "/img/test-passes/thumbnails/webp/poppy-burgess.webp",
+        altText: "",
+    },
+    {
         name: "Nyle",
         datePassed: "November 2025",
         testCentre: "Sidcup",
         firstTime: true,
         area: "Grove Park",
         alt: "",
-        img: "/img/test-passes/thumbnails/nyle-somers.jpg",
+        img: "/img/test-passes/thumbnails/webp/nyle-somers.webp",
         altText: "",
     },
     {
@@ -16,7 +56,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "",
-        img: "/img/test-passes/thumbnails/molly-etheridge.jpg",
+        img: "/img/test-passes/thumbnails/webp/molly-etheridge.webp",
         altText: "",
     },
     {
@@ -26,7 +66,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "New Eltham",
         alt: "",
-        img: "/img/test-passes/thumbnails/rebecca-clossick.jpg",
+        img: "/img/test-passes/thumbnails/webp/rebecca-clossick.webp",
         altText: "",
     },
     {
@@ -36,7 +76,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "",
-        img: "/img/test-passes/thumbnails/alex-rochester.jpg",
+        img: "/img/test-passes/thumbnails/webp/alex-rochester.webp",
         altText: "",
     },
     {
@@ -46,7 +86,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Petts Wood",
         alt: "",
-        img: "/img/test-passes/thumbnails/thresa-mathew.jpg",
+        img: "/img/test-passes/thumbnails/webp/thresa-mathew.webp",
         altText: "",
     },
     {
@@ -56,7 +96,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Chislehurst",
         alt: "",
-        img: "/img/test-passes/thumbnails/josh-mundy.jpg",
+        img: "/img/test-passes/thumbnails/webp/josh-mundy.webp",
         altText: "",
     },
     {
@@ -66,7 +106,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Chislehurst",
         alt: "",
-        img: "/img/test-passes/thumbnails/jess-makahon.jpg",
+        img: "/img/test-passes/thumbnails/webp/jess-makahon.webp",
         altText: "",
     },
     {
@@ -76,7 +116,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "",
-        img: "/img/test-passes/thumbnails/simi.jpg",
+        img: "/img/test-passes/thumbnails/webp/simi.webp",
         altText: "",
     },
     {
@@ -86,7 +126,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Shooters Hill",
         alt: "",
-        img: "/img/test-passes/thumbnails/amelia-cesenek.jpg",
+        img: "/img/test-passes/thumbnails/webp/amelia-cesenek.webp",
         altText: "",
     },
     {
@@ -96,7 +136,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Petts Wood",
         alt: "",
-        img: "/img/test-passes/thumbnails/will-magee-brown.jpg",
+        img: "/img/test-passes/thumbnails/webp/will-magee-brown.webp",
         altText: "",
     },
     {
@@ -106,7 +146,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "",
-        img: "/img/test-passes/thumbnails/charmaine-magay.jpg",
+        img: "/img/test-passes/thumbnails/webp/charmaine-magay.webp",
         altText: "",
     },
     {
@@ -116,7 +156,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Kidbrooke",
         alt: "",
-        img: "/img/test-passes/thumbnails/samson-wong.jpg",
+        img: "/img/test-passes/thumbnails/webp/samson-wong.webp",
         altText: "",
     },
     {
@@ -126,7 +166,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "",
-        img: "/img/test-passes/thumbnails/pauliina-leskinen.jpg",
+        img: "/img/test-passes/thumbnails/webp/pauliina-leskinen.webp",
         altText: "",
     },
     {
@@ -136,7 +176,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Blackheath",
         alt: "",
-        img: "/img/test-passes/thumbnails/kate-scott.jpg",
+        img: "/img/test-passes/thumbnails/webp/kate-scott.webp",
         altText: "",
     },
     {
@@ -146,7 +186,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Mottingham",
         alt: "",
-        img: "/img/test-passes/thumbnails/josh-bauly.jpg",
+        img: "/img/test-passes/thumbnails/webp/josh-bauly.webp",
         altText: "",
     },
     {
@@ -156,7 +196,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Grove Park",
         alt: "",
-        img: "/img/test-passes/thumbnails/marnie-ridley.jpg",
+        img: "/img/test-passes/thumbnails/webp/marnie-ridley.webp",
         altText: "",
     },
     {
@@ -166,7 +206,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Bromley",
         alt: "",
-        img: "/img/test-passes/thumbnails/emma-mckenna.jpg",
+        img: "/img/test-passes/thumbnails/webp/emma-mckenna.webp",
         altText: "",
     },
     {
@@ -176,7 +216,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "New Eltham",
         alt: "",
-        img: "/img/test-passes/thumbnails/jack-garnham.jpg",
+        img: "/img/test-passes/thumbnails/webp/jack-garnham.webp",
         altText: "",
     },
     {
@@ -186,7 +226,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Bickley",
         alt: "",
-        img: "/img/test-passes/thumbnails/lilly-geheren.jpg",
+        img: "/img/test-passes/thumbnails/webp/lilly-geheren.webp",
         altText: "",
     },
     {
@@ -196,7 +236,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Sidcup",
         alt: "",
-        img: "/img/test-passes/thumbnails/teddy-parker.jpg",
+        img: "/img/test-passes/thumbnails/webp/teddy-parker.webp",
         altText: "",
     },
     {
@@ -206,7 +246,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Charlton",
         alt: "",
-        img: "/img/test-passes/thumbnails/james-huthwaite.jpg",
+        img: "/img/test-passes/thumbnails/webp/james-huthwaite.webp",
         altText: "",
     },
     {
@@ -216,7 +256,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Grove Park",
         alt: "",
-        img: "/img/test-passes/thumbnails/alex-abley.jpg",
+        img: "/img/test-passes/thumbnails/webp/alex-abley.webp",
         altText: "",
     },
     {
@@ -226,7 +266,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Mottingham",
         alt: "",
-        img: "/img/test-passes/thumbnails/rachel-cole-wilkin.jpg",
+        img: "/img/test-passes/thumbnails/rachel-webp/cole-wilkin.webp",
         altText: "",
     },
     {
@@ -236,7 +276,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Chislehurst",
         alt: "",
-        img: "/img/test-passes/thumbnails/caroline-wadham.jpg",
+        img: "/img/test-passes/thumbnails/webp/caroline-wadham.webp",
         altText: "",
     },
     {
@@ -246,7 +286,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "New Eltham",
         alt: "",
-        img: "/img/test-passes/thumbnails/amy-watts.jpg",
+        img: "/img/test-passes/thumbnails/webp/amy-watts.webp",
         altText: "with zero driver faults",
     },
     {
@@ -256,7 +296,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Sidcup",
         alt: "",
-        img: "/img/test-passes/thumbnails/wilhemina-konteh.jpg",
+        img: "/img/test-passes/thumbnails/webp/wilhemina-konteh.webp",
         altText: "with zero driver faults",
     },
     {
@@ -266,7 +306,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Mottingham",
         alt: "",
-        img: "/img/test-passes/thumbnails/angelika-gomolka.jpg",
+        img: "/img/test-passes/thumbnails/webp/angelika-gomolka.webp",
         altText: "",
     },
     {
@@ -276,7 +316,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Petts Wood",
         alt: "",
-        img: "/img/test-passes/thumbnails/rory-charman.jpg",
+        img: "/img/test-passes/thumbnails/webp/rory-charman.webp",
         altText: "",
     },
     {
@@ -286,7 +326,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Mottingham",
         alt: "",
-        img: "/img/test-passes/thumbnails/amy-campbell.jpg",
+        img: "/img/test-passes/thumbnails/webp/amy-campbell.webp",
         altText: "",
     },
     {
@@ -296,7 +336,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Bickley",
         alt: "",
-        img: "/img/test-passes/thumbnails/amelia-armitage.jpg",
+        img: "/img/test-passes/thumbnails/webp/amelia-armitage.webp",
         altText: "with only one driver fault",
     },
     {
@@ -306,7 +346,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Mottingham",
         alt: "",
-        img: "/img/test-passes/thumbnails/domantas.jpg",
+        img: "/img/test-passes/webp/thumbnails/domantas.webp",
         altText: "",
     },
     {
@@ -316,7 +356,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Hither Green",
         alt: "",
-        img: "/img/test-passes/thumbnails/callum-hc.jpg",
+        img: "/img/test-passes/thumbnails/webp/callum-hc.webp",
         altText: "",
     },
     {
@@ -326,7 +366,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Orpington",
         alt: "",
-        img: "/img/test-passes/thumbnails/connor-bussey.jpg",
+        img: "/img/test-passes/thumbnails/webp/connor-bussey.webp",
         altText: "during school rush hour",
     },
     {
@@ -336,7 +376,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Petts Wood",
         alt: "",
-        img: "/img/test-passes/thumbnails/atharv-gupta.jpg",
+        img: "/img/test-passes/thumbnails/webp/atharv-gupta.webp",
         altText: "",
     },
     {
@@ -346,7 +386,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Kidbrooke",
         alt: "",
-        img: "/img/test-passes/thumbnails/adam-croxford.jpg",
+        img: "/img/test-passes/thumbnails/webp/adam-croxford.webp",
         altText: "",
     },
     {
@@ -356,7 +396,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Petts Wood",
         alt: "",
-        img: "/img/test-passes/thumbnails/chloe-steel.jpg",
+        img: "/img/test-passes/thumbnails/webp/chloe-steel.webp",
         altText: "",
     },
     {
@@ -366,7 +406,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Bromley",
         alt: "Test passed with only one driving fault,",
-        img: "/img/test-passes/thumbnails/kenneth-masceranhas.jpg",
+        img: "/img/test-passes/thumbnails/webp/kenneth-masceranhas.webp",
         altText: "with one driving fault",
     },
     {
@@ -376,7 +416,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "Chislehurst",
         alt: "Test passed with zero driving faults, Sidcup 2023",
-        img: "/img/test-passes/thumbnails/cristiano-da-silva.jpg",
+        img: "/img/test-passes/thumbnails/cristiano-webp/da-silva.webp",
         altText: "with zero driving faults",
     },
     {
@@ -386,7 +426,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "Test passed in Sidcup, November 2023",
-        img: "/img/test-passes/thumbnails/besmir-hoxha.jpg",
+        img: "/img/test-passes/thumbnails/webp/besmir-hoxha.webp",
     },
     {
         name: "Alex",
@@ -395,7 +435,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "Test passed in Sidcup, November 2023",
-        img: "/img/test-passes/thumbnails/alex-sibley.jpg",
+        img: "/img/test-passes/thumbnails/webp/alex-sibley.webp",
     },
     {
         name: "Nyiah",
@@ -404,7 +444,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "Test passed in Hither Green, April 2022",
-        img: "/img/test-passes/thumbnails/nyiah-pilgrim.jpg",
+        img: "/img/test-passes/thumbnails/webp/nyiah-pilgrim.webp",
     },
     {
         name: "Dylan",
@@ -413,7 +453,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "University of Greenwich",
         alt: "Test passed in Hither Green, March 2022",
-        img: "/img/test-passes/thumbnails/dylan-bassono.jpg",
+        img: "/img/test-passes/thumbnails/webp/dylan-bassono.webp",
     },
     {
         name: "Ellie",
@@ -422,7 +462,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "Test passed in Sidcup, November 2021",
-        img: "/img/test-passes/thumbnails/ellie-daniels.jpg",
+        img: "/img/test-passes/thumbnails/webp/ellie-daniels.webp",
     },
     {
         name: "Ashley",
@@ -431,7 +471,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "Test passed in Bromley, November 2021",
-        img: "/img/test-passes/thumbnails/ashley-hooker.jpg",
+        img: "/img/test-passes/thumbnails/webp/ashley-hooker.webp",
     },
     {
         name: "Loryn",
@@ -440,7 +480,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "New Eltham",
         alt: "Test passed in Bromley, November 2021",
-        img: "/img/test-passes/thumbnails/loryn-hunt.jpg",
+        img: "/img/test-passes/thumbnails/webp/loryn-hunt.webp",
     },
     {
         name: "Amy",
@@ -449,7 +489,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Lee Green",
         alt: "Test passed in Sidcup, November 2021",
-        img: "/img/test-passes/thumbnails/amy-smith.jpg",
+        img: "/img/test-passes/thumbnails/webp/amy-smith.webp",
     },
     {
         name: "Charlotte",
@@ -458,7 +498,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "New Eltham",
         alt: "Test passed in Sidcup, November 2021",
-        img: "/img/test-passes/thumbnails/charlotte-reid.jpg",
+        img: "/img/test-passes/thumbnails/webp/charlotte-reid.webp",
     },
     {
         name: "Katie",
@@ -467,7 +507,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Eltham",
         alt: "Test passed in Sidcup, August 2021",
-        img: "/img/test-passes/thumbnails/katie-clarkstone.jpg",
+        img: "/img/test-passes/thumbnails/webp/katie-clarkstone.webp",
     },
     {
         name: "Callum",
@@ -476,7 +516,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Chislehurst",
         alt: "Test passed in Bromley, August 2021",
-        img: "/img/test-passes/thumbnails/callum-biggins.jpg",
+        img: "/img/test-passes/thumbnails/webp/callum-biggins.webp",
     },
     {
         name: "Dan",
@@ -485,7 +525,7 @@ const drivingTestPasses = [
         firstTime: false,
         area: "central London",
         alt: "Test passed in Bromley, July 2021",
-        img: "/img/test-passes/thumbnails/dan-rosenheck.jpg",
+        img: "/img/test-passes/thumbnails/webp/dan-rosenheck.webp",
         altText: "on a sunny Thursday morning",
         id: 10,
     },
@@ -496,7 +536,7 @@ const drivingTestPasses = [
         firstTime: true,
         area: "Hither Green",
         alt: "Test passed in Bromley, May 2021",
-        img: "/img/test-passes/thumbnails/lucas-dunckley.jpg",
+        img: "/img/test-passes/thumbnails/webp/lucas-dunckley.webp",
         id: 9,
     },
     {

@@ -28,4 +28,4 @@ Route::middleware('auth')->group(function () {
 
 /* test routes */
 Route::get('/tests/routes/{area?}', [TestRouteController::class, 'show'])->name('test.routes');
-Route::get('/test/routes/{area}/{id}', [TestRouteController::class, 'old_routes'])->name('test.routes');
+// Route::get('/test/routes/{area}/{id}', [TestRouteController::class, 'old_routes'])->name('test.routes');
