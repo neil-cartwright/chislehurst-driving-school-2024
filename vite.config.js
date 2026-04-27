@@ -28,4 +28,12 @@ export default defineConfig({
             vue: "vue/dist/vue.esm-bundler.js",
         },
     },
+    // getting deprecation warnings, should be resolved in bulma v 1.0.5
+    css: {
+        preprocessorOptions: {
+            scss: {
+                silenceDeprecations: ["if-function", "legacy-js-api"],
+            },
+        },
+    },
 });

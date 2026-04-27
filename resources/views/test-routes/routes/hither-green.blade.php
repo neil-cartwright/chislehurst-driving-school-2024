@@ -13,7 +13,7 @@
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bsTUT2gk4px5P3m2ifg501ZnG0ivna8h" width="640"
                 height="480"></iframe>
         @else
-            <div>Please sign up for details</div>
+            <div>please sign in</div>
         @endauth
     </div>
 </div>

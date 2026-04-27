@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('page-description', 'customer reviews for chislehurst driving school')
+@section('page-description', 'Customer reviews for Chislehurst Driving School')
 
-@section('title', 'Reviews')
+@section('title', 'Customer reviews')
 
 @section('main')
     <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">

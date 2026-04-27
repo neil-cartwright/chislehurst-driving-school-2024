@@ -1,13 +1,16 @@
+@use "../abstracts" as mixins;
+
 .breadcrumb {
     padding: 0.5rem 1rem;
-    border-bottom: 1px solid $light;
-    @include mobile {
+    border-bottom: 1px solid var(--bulma-light);
+    --bulma-breadcrumb-item-active-color: inherit;
+    @include mixins.mobile {
         margin-bottom: 0 !important;
         font-size: 14px;
     }
 
     li a {
-        color: $black-ter;
+        color: var(--bulma-black-ter);
         &:hover {
             opacity: 0.9;
         }
@@ -19,9 +22,12 @@
 }
 
 .navbar.is-light .navbar-brand a.navbar-item:hover,
+a.navbar-item {
+    gap: 0;
+}
 a.navbar-item:hover {
     background-color: initial;
-    color: $black-ter;
+    color: var(--bulma-black-ter);
 }
 
 .is-ancestor .tile.is-child {
@@ -29,4 +35,18 @@ a.navbar-item:hover {
 }
 .is-ancestor .tile.is-child:hover {
     transform: scale(1.025);
+}
+.navbar-burger {
+    color: inherit;
+    &:active,
+    &:focus,
+    &:hover,
+    &.is-active {
+        background-color: none;
+    }
+}
+
+.notification .areas-list a.tag {
+    text-decoration: none;
+    font-weight: bold;
 }

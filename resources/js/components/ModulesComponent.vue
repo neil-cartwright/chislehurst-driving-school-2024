@@ -1,5 +1,5 @@
 <template>
-    <div class="columns is-multiline mb-4">
+    <aside class="columns is-multiline mb-4">
         <div
             class="column is-6 is-4-desktop is-flex"
             v-for="{ subject, img, text, alt } in drivingModules"
@@ -7,7 +7,9 @@
         >
             <div class="card">
                 <div class="card-header">
-                    <div class="card-header-title">{{ subject }}</div>
+                    <div class="card-header-title">
+                        {{ subject }}
+                    </div>
                 </div>
                 <div class="card-image">
                     <img :src="img" :alt="alt" />
@@ -17,7 +19,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </aside>
 </template>
 <script setup>
 import drivingModules from "../driving-modules.js";

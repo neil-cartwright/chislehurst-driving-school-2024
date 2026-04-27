@@ -1,4 +1,5 @@
-<div>
+<div class="is-hidden-mobile">
+
     <aside class="menu mt-2 mb-4">
 
         <x-navigation.side-menu></x-navigation.side-menu>
@@ -7,7 +8,7 @@
 
     <aside class="menu mb-6">
 
-        <p class="menu-label">Driving tests</p>
+        <p class="menu-label">Gov.uk links</p>
         <ul class="menu-list">
             <li class="has-text-weight-bold"><a target="_blank" href="https://readytopass.campaign.gov.uk/"><i
                         class="fa-solid fa-arrow-up-right-from-square has-text-grey-light mr-4"></i>Ready to pass?</a>

@@ -114,7 +114,7 @@ const handleSubmit = (e) => {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },
-            }
+            },
         )
         .then((response) => {
             hasNotes.value = response.data;

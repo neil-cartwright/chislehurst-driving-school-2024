@@ -7,7 +7,7 @@
 @endif
 
 <x-card>
-    <x-slot:title>Get in touch: &nbsp; <span class="has-text-weight-light is-italic">I usually reply within a few
+    <x-slot:title>Get in touch: &nbsp; <span class="has-text-weight-light is-italic">I usually reply within 2
             hours</span></x-slot:title>
     <x-slot:content>
         <form action="/contact" method="post">

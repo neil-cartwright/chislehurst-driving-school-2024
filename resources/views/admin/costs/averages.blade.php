@@ -56,6 +56,7 @@
 
                                     $monthNum = $carbon::parse($lesson[0]->lesson_date)->format('m');
                                     $yearNum = $carbon::parse($lesson[0]->lesson_date)->format('Y');
+
                                 @endphp
                                 <tr>
                                     <td>

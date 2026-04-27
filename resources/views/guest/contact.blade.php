@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-description', 'Contact page for chislehurst driving school')
+@section('page-description', 'Contact page for Chislehurst Driving School')
 
 @section('title', 'Contact')
 

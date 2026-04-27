@@ -162,6 +162,18 @@
                             </label>
                         </div>
 
+                        <div class="control">
+                            <label class="checkbox">
+                                <input
+                                    type="radio"
+                                    name="prepaid"
+                                    :value="1000"
+                                    v-model="formData.lesson_rate"
+                                />
+                                Prepaid package of 10 * 100 minute lessons
+                            </label>
+                        </div>
+
                         <div class="control mb-2">
                             <label class="checkbox">
                                 <input
@@ -188,6 +200,7 @@
                                 <input
                                     type="checkbox"
                                     name="paymentTaken"
+                                    step="0.10"
                                     :true-value="1"
                                     :false-value="0"
                                     v-model="formData.paymentTaken"
@@ -255,6 +268,7 @@
                             </span>
                             <input
                                 type="number"
+                                step="0.10"
                                 id="lesson_charge"
                                 class="input w-half"
                                 v-model="formData.discountGiven"
@@ -362,7 +376,7 @@ const selectedLessonCharge = computed(() => {
 
     switch (rate) {
         case 50:
-            result = 35;
+            result = 38;
             break;
         case 100:
             result = era == 20251 ? 68 : 72;
@@ -370,11 +384,14 @@ const selectedLessonCharge = computed(() => {
         case 500:
             result = era == 20251 ? 65 : 69;
             break;
+        case 1000:
+            result = era == 20251 ? 65 : 67;
+            break;
         case "test":
-            result = 140;
+            result = 125;
             break;
         default:
-            result = 65;
+            result = 69;
     }
     return result;
 });

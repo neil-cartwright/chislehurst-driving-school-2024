@@ -51,3 +51,10 @@
 .cursor-pointer {
     cursor: pointer !important;
 }
+
+a.is-hoverable {
+    transition: all 500ms;
+}
+a.is-hoverable:hover i {
+    color: var(--bulma-link);
+}

@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('page-description',
-    'A free interactive ' .
+    'A fun free interactive ' .
     str_replace('-', ' ', $quiz_name) .
     ' quiz for learner
-    drivers')
+    drivers.')
 
 
 @section('title', 'Quiz | ' . ucfirst(str_replace('-', ' ', $quiz_name)))

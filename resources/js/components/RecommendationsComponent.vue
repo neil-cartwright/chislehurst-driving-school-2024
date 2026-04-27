@@ -1,15 +1,18 @@
 <template>
-    <div class="notification is-light">
+    <div class="notification">
         <div class="is-flex is-justify-content-space-between">
             <h6 class="animated is-uppercase has-text-weight-bold">
                 Customer reviews
+                <span class="has-text-weight-light is-size-7"
+                    >{{ counter + 1 }}/{{ recommendations.length + 1 }}</span
+                >
             </h6>
             <div>
                 <a
-                    class="button is-small is-info"
+                    class="button is-small is-link"
                     @click="next"
                     title="Read some more recommendations"
-                    >read more &gt;&gt;</a
+                    >next &gt;&gt;</a
                 >
             </div>
         </div>
@@ -25,9 +28,6 @@
                 </div>
             </div>
         </transition>
-        <span class="has-text-weight-light is-size-7"
-            >{{ counter + 1 }}/{{ recommendations.length + 1 }}</span
-        >
     </div>
 </template>
 <style scoped>

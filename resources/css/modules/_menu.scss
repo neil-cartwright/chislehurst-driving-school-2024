@@ -1,35 +1,42 @@
+@use "../abstracts" as mixins;
+
 .menu-list:not(.menu-has-dropdown) li {
     display: flex;
     align-items: center;
 }
 
 .menu-list a.is-active {
-    @include tablet {
+    @include mixins.tablet {
         margin-left: 0.75rem;
     }
 }
 
+.menu-list a {
+    margin-right: 1rem;
+}
+
 .admin-menu,
 .dashboard-menu {
-    border-right: 1px solid $light;
+    border-right: 1px solid var(--bulma-text-light);
     .menu-label {
-        @include mobile {
-            color: $black;
+        @include mixins.mobile {
+            color: --black;
         }
-        @include mobile {
+        @include mixins.mobile {
             margin: 0.1rem;
-            background: $light;
+            background: var(--bulma-text-light);
             padding: 0.25rem 1rem;
             cursor: pointer;
             &:hover {
-                background: $info;
-                color: $white;
+                background: var(--bulma-info);
+                color: var(--bulma-white);
+                text-decoration: underline;
             }
         }
         &.is-active {
-            @include mobile {
-                background: $info;
-                color: $white;
+            @include mixins.mobile {
+                background: var(--bulma-info);
+                color: var(--bulma-white);
             }
         }
     }
@@ -37,15 +44,15 @@
     .menu-list {
         font-size: 14px;
         margin-bottom: 1rem;
-        @include mobile {
+        @include mixins.mobile {
             padding: 0.25rem 1rem;
             margin-bottom: 0.5rem;
         }
         a.is-active {
-            // background: $info;
-            @include mobile {
+            background: var(--bulma-link);
+            @include mixins.mobile {
                 background: inherit;
-                color: $black-ter;
+                color: var(--bulma-black-ter);
                 font-weight: bold;
             }
         }

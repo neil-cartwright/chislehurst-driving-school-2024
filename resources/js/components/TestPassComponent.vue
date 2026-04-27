@@ -6,7 +6,7 @@
                     <div class="flex-container">
                         <img
                             :src="testPass.img"
-                            v-bind:alt="'Driving lessons in ' + testPass.area"
+                            v-bind:alt="'Driving test pass in ' + testPass.area"
                             class="image test-pass-carousel-image is-inline"
                         />
                         <p>

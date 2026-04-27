@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-description', 'Frequently asked questions')
+@section('page-description', 'Frequently asked questions about driving lessons and driving tests')
 
 @section('title', 'FAQ')
 
@@ -55,6 +55,14 @@
                             waiting list is likely to remain fairly long.</p>
                     </details>
 
+
+                    <details class="notification">
+                        <summary class="mb-2 has-text-weight-bold cursor-pointer">Do lessons start from home?
+                        </summary>
+                        <p>Most people start and finish their lessons either from home or from school. I can also pick up
+                            and drop off at any location or place of work locally.</p>
+                    </details>
+
                     <details class="notification">
                         <summary class="mb-2 has-text-weight-bold cursor-pointer">Can I use my own car for tests?</summary>
                         <p>Yes you can use your own car for test. Please read the gov.uk website: <a
@@ -71,20 +79,22 @@
                     </details>
 
                     <details class="notification">
-                        <summary class="mb-2 has-text-weight-bold cursor-pointer">Do you do 1 hour lessons?</summary>
-                        <p>Not anymore. I used to, but during covid I was required to reduce exposure to the virus so
-                            started doing longer lessons with fewer people. 1 hour 40 minute lessons allow for a more varied
-                            and
-                            realistic driving
-                            experience. Pass rates have improved significantly since providing longer lessons.
+                        <summary class="mb-2 has-text-weight-bold cursor-pointer">Do you do shorter lessons?</summary>
+                        <p>Yes, on request. 1 hour 40 minute lessons allow for a more varied, realistic and thorough driving
+                            experience. Pass rates have improved significantly since providing longer lessons. 50 minute
+                            lessons are charged at £38.
                         </p>
                     </details>
 
                     <details class="notification">
                         <summary class="mb-2 has-text-weight-bold cursor-pointer">How many lessons will I need?</summary>
                         <p>This is hard to answer, but most people take between 30 and 60 hours to learn to drive with a
-                            professional instructor, which equates to somewhere between 18 and 35 weeks of lessons. However,
+                            professional instructor. However,
                             it really depends on your previous experience and level of ability.</p>
+                        <p>One essential aspect of passing a driving test is acquiring enough experience in order
+                            to be able
+                            to deal safely and confidently with the wide variety of situations you're likely to encounter.
+                        </p>
                     </details>
 
                     <details class="notification">
@@ -126,8 +136,11 @@
                             all required reverse parking manoeuvres to a reasonable standard then
                             you are ready to be tested. It is also extremely helpful to have mock tests in order to prepare
                             for driving under test conditions. The government has a campaign to ensure candidates attend
-                            tests fully prepared. You
-                            can find the link to it <a href="https://readytopass.campaign.gov.uk/">here.</a></p>
+                            tests fully prepared.
+                            <a href="https://readytopass.campaign.gov.uk/" target="_blank">Click here for the &ldquo;Ready
+                                to Pass&rdquo;
+                                campaign.</a>
+                        </p>
                     </details>
 
                     <details class="notification">
@@ -166,8 +179,9 @@
                         <summary class="mb-2 has-text-weight-bold cursor-pointer">Which car do I use for the driving test?
                         </summary>
                         <p>Most people hire their instructor's car for the test. However, you are allowed to use your own,
-                            or hire a car from a third party. The rules for providing your own car are <a
-                                href="https://www.gov.uk/driving-test/using-your-own-car">here</a>. </p>
+                            or hire a car from a third party. <a href="https://www.gov.uk/driving-test/using-your-own-car"
+                                target="_blank">Click here for rules for providing
+                                your own car</a>. </p>
                     </details>
 
                     <details class="notification">

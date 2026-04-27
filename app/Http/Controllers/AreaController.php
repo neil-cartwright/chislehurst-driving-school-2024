@@ -29,7 +29,8 @@ class AreaController extends Controller
             'new-eltham',
             'grove-park',
             'lee',
-            'sidcup'
+            'sidcup',
+            'downham'
         );
 
         if (in_array($area, $areas)) {

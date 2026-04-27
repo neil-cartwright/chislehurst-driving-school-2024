@@ -37,7 +37,6 @@ import AddTestDate from "./components/AddTestDate.vue";
 import SummaryComponent from "./components/SummaryComponent.vue";
 import EnquiryMessage from "./components/EnquiryMessage.vue";
 // routes app
-// import SidcupRoundaboutsTabs from "./components/routes-app/SidcupRoundaboutsTabs.vue";
 
 createApp({})
     .component("PairsComponent", PairsComponent)

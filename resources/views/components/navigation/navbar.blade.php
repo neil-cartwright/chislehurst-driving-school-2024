@@ -1,12 +1,13 @@
 <nav class="navbar" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item font-headings is-size-5" href="{{ url('/') }}">
-            <span class="icon is-large has-text-success mr-1">
+        <a class="navbar-item font-headings is-size-5 is-size-6-mobile " href="{{ url('/') }}">
+            <span class="icon is-large has-text-success">
                 <i class="fas fa-road"></i>
             </span>
             Chislehurst Driving School
         </a>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-navbar">
+            <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -26,14 +27,14 @@
 
             @guest
                 <a href="tel:07917042740" class="navbar-item font-body">
-                    <span class="icon is-medium has-text-info is-hidden-desktop-only">
+                    <span class="icon is-medium has-text-success is-hidden-desktop-only">
                         <i class="fas fa-phone"></i>
                     </span>
                     <span>
                         07917 042 740
                     </span></a>
                 <a href="mailto:neil@chislehurstdrivingschool.co.uk" class="navbar-item font-body ">
-                    <span class="icon is-medium has-text-info is-hidden-desktop-only">
+                    <span class="icon is-medium has-text-success is-hidden-desktop-only">
                         <i class="fas fa-envelope"></i>
                     </span>
                     <span>neil@chislehurstdrivingschool.co.uk</span></a>
@@ -46,14 +47,14 @@
 
             @auth
                 <div class="navbar-item">
-                    <a href="{{ route('dashboard') }}" class="button is-info">
+                    <a href="{{ route('dashboard') }}" class="button is-link">
                         Dashboard
                     </a>
 
                 </div>
             @endauth
             @guest
-
+                <a href="/about" class="navbar-item ml-2">About</a>
                 <a href="/faq" class="navbar-item ml-2">FAQ</a>
                 <a href="/prices" class="navbar-item ml-2">Prices</a>
                 <a href="/contact" class="navbar-item ml-2">Contact</a>
@@ -64,9 +65,11 @@
                     </a>
                     <div class="navbar-dropdown">
                         <a href="/reviews" class="navbar-item">Reviews</a>
-                        <a href="/quiz" class="navbar-item">Quizzes</a>
-                        <a href="/signs/warning-signs" class="navbar-item">Road signs</a>
+                        <a href="/quiz" class="navbar-item">Quiz</a>
+                        <a href="/signs/warning-signs" class="navbar-item">Signs</a>
                         <a href="/tests/routes" class="navbar-item ">Test routes</a>
+                        <a href="/driving-lessons" class="navbar-item">Driving lessons</a>
+                        <a href="/fails" class="navbar-item">Driving test fails</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +79,7 @@
         <div class="navbar-item">
             <div class="buttons">
                 @guest
-                    <a href="/login" class="button is-success has-text-weight-bold">
+                    <a href="/login" class="button is-success has-text-white has-text-weight-bold">
                         Sign in
                     </a>
                 @endguest
@@ -85,6 +88,5 @@
                 @endauth
             </div>
         </div>
-    </div>
     </div>
 </nav>

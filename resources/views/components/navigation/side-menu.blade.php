@@ -19,12 +19,12 @@
     <li><a href="/quiz/junctions" class="is-flex is-align-items-center">
             <span class="icon mr-4">
                 <i class="fa fa-graduation-cap has-text-success"></i>
-            </span>Quizzes</a>
+            </span>Quiz</a>
     </li>
     <li><a href="/signs" class="is-flex is-align-items-center">
             <span class="icon mr-4">
                 <i class="fa fa-question-circle has-text-dark"></i>
-            </span>Road signs</a>
+            </span>Signs</a>
     </li>
     <li><a href="https://chislehurstdrivingschool.theorytestpro.co.uk/students/new"
             class="is-flex is-align-items-center">
@@ -34,7 +34,7 @@
     </li>
     <li><a href="/tests/routes/sidcup" class="is-flex is-align-items-center">
             <span class="icon mr-4"><i class="fa fa-map has-text-primary"></i></span>
-            Driving test routes</a></li>
+            Test routes</a></li>
 
     <li><a href="/reviews" class="is-flex is-align-items-center">
             <span class="icon mr-4">
@@ -43,11 +43,11 @@
             <span>Customer reviews</span></a>
     </li>
 
-    <li><a href="/parallel-parking" class="is-flex is-align-items-center">
-            <span class="icon mr-4">
-                <i class="fa-solid fa-car"></i>
+    <li><a href="/fails" class="is-flex is-align-items-center">
+            <span class="icon mr-4 has-text-danger">
+                <i class="fa-regular fa-circle-xmark"></i>
             </span>
-            <span>Parallel parking</span></a>
+            <span>Test fails</span></a>
     </li>
 
 </ul>

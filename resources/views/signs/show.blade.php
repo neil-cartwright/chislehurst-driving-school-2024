@@ -4,13 +4,13 @@
     'Interactive web page showing ' .
     ucwords(str_replace('-', ' ', $type)) .
     ' to help learner
-    drivers become familiar with different different road signs')
+    drivers become familiar with different types of road signs')
 
     @php
         $unwanted = ['.', '..', 'Thumbs.db', '.DS_Store'];
     @endphp
 
-@section('title', 'Signs | ' . ucwords(str_replace('-', ' ', $type)))
+@section('title', 'Traffic signs | ' . ucwords(str_replace('-', ' ', $type)))
 
 @section('main')
 

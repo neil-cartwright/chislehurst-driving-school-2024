@@ -1,5 +1,15 @@
 const drivingTestPasses = [
     {
+        name: "Viktor",
+        datePassed: "April 2026",
+        testCentre: "Sidcup",
+        firstTime: true,
+        area: "Chislehurst",
+        alt: "",
+        img: "/img/test-passes/thumbnails/webp/viktor-goloubovsky.webp",
+        altText: "",
+    },
+    {
         name: "Olivia",
         datePassed: "March 2026",
         testCentre: "Sidcup",

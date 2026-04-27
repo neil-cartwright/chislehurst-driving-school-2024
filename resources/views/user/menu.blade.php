@@ -117,13 +117,6 @@
             </li>
         </ul>
     </div>
-
-    <div class="menu is-hidden">
-        <p class="menu-label">Routes App</p>
-        <ul class="menu-list">
-            <li><a href="/routes-app/sidcup">Sidcup Routes app</a></li>
-        </ul>
-    </div>
 </div>
 
 @push('scripts-after')

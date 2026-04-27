@@ -138,91 +138,91 @@ export default {
                     src: "img/road-signs/webp/prohibitory/no-vehicles.webp",
                     meaning: "No vehicles",
                 },
-                // {
-                //     src: "img/driving-images/bus-and-cycle-signs/bicycles.jpg",
-                //     meaning: "Warning of cycles",
-                // },
-                // {
-                //     src: "img/driving-images/on-street-parking/no-stopping[2].jpg",
-                //     meaning: "No stopping",
-                // },
-                // {
-                //     src: "img/driving-images/direction-and-tourist-signs/diversion-diamond.jpg",
-                //     meaning: "Diversion - follow diamond symbol",
-                // },
-                // {
-                //     src: "img/driving-images/motorway-signs/keep-two-chevrons-apart.jpg",
-                //     meaning: "Keep two chevrons apart",
-                // },
-                // {
-                //     src: "img/driving-images/low-bridge-signs/arch-bridge-height-warning.jpg",
-                //     meaning:
-                //         "Warning of height restriction in centre of arched bridge",
-                // },
-                // {
-                //     src: "img/driving-images/motorway-signs/all-lanes-closed.jpg",
-                //     meaning: "All lanes closed on motorway",
-                // },
-                // {
-                //     src: "img/driving-images/on-street-parking/park-on-kerb-times.jpg",
-                //     meaning: "Times at which you can park on the kerb",
-                // },
-                // {
-                //     src: "img/driving-images/on-street-parking/park-on-kerb-times.jpg",
-                //     meaning: "Times at which you can park on the kerb",
-                // },
-                // {
-                //     src: "img/driving-images/information-signs/no-through-route-on-left.jpg",
-                //     meaning: "No through route on left",
-                // },
-                // {
-                //     src: "img/driving-images/warning-signs/hump-back-bridge.jpg",
-                //     meaning: "Hump back bridge",
-                // },
-                // {
-                //     src: "img/driving-images/warning-signs/falling-rocks.jpg",
-                //     meaning: "Falling rocks",
-                // },
-                // {
-                //     src: "img/road-signs/traffic-lights/toucan.png",
-                //     meaning: "Toucan crossing display",
-                // },
-                // {
-                //     src: "img/driving-images/road-works-and-temporary/when-red-light-shows-wait-here.jpg",
-                //     meaning: "Temporary traffic light information",
-                // },
-                // {
-                //     src: "img/driving-images/warning-signs/danger.jpg",
-                //     meaning: "Danger",
-                // },
-                // {
-                //     src: "img/driving-images/warning-signs/quayside.jpg",
-                //     meaning: "Quayside",
-                // },
-                // {
-                //     src: "img/driving-images/regulatory-signs/no-overtaking.png",
-                //     meaning: "No overtaking",
-                // },
-                // {
-                //     src: "img/driving-images/direction-and-tourist-signs/diversion-triangle-alt.jpg",
-                //     meaning: "Follow symbol for diversion route",
-                // },
-                // {
-                //     src: "img/driving-images/information-signs/lane-3-ends.jpg",
-                //     meaning: "Lane three is closing",
-                // },
-                // {
-                //     src: "img/driving-images/level-crossing-signs/open-crossing.jpg",
-                //     meaning: "Open level crossing",
-                // },
-                // {
-                //     src: "img/driving-images/motorway-signs/lane-closed.jpg",
-                //     meaning: "Lane is closed",
-                // },
-                // {
-                //     src: "img/driving-images/motorway-signs/lane-guidance-alt.jpg",
-                //     meaning: "Lane guidance",
-                // },
+                {
+                    src: "img/driving-images/bus-and-cycle-signs/bicycles.jpg",
+                    meaning: "Warning of cycles",
+                },
+                {
+                    src: "img/driving-images/on-street-parking/no-stopping[2].jpg",
+                    meaning: "No stopping",
+                },
+                {
+                    src: "img/driving-images/direction-and-tourist-signs/diversion-diamond.jpg",
+                    meaning: "Diversion - follow diamond symbol",
+                },
+                {
+                    src: "img/driving-images/motorway-signs/keep-two-chevrons-apart.jpg",
+                    meaning: "Keep two chevrons apart",
+                },
+                {
+                    src: "img/driving-images/low-bridge-signs/arch-bridge-height-warning.jpg",
+                    meaning:
+                        "Warning of height restriction in centre of arched bridge",
+                },
+                {
+                    src: "img/driving-images/motorway-signs/all-lanes-closed.jpg",
+                    meaning: "All lanes closed on motorway",
+                },
+                {
+                    src: "img/driving-images/on-street-parking/park-on-kerb-times.jpg",
+                    meaning: "Times at which you can park on the kerb",
+                },
+                {
+                    src: "img/driving-images/on-street-parking/park-on-kerb-times.jpg",
+                    meaning: "Times at which you can park on the kerb",
+                },
+                {
+                    src: "img/driving-images/information-signs/no-through-route-on-left.jpg",
+                    meaning: "No through route on left",
+                },
+                {
+                    src: "img/driving-images/warning-signs/hump-back-bridge.jpg",
+                    meaning: "Hump back bridge",
+                },
+                {
+                    src: "img/driving-images/warning-signs/falling-rocks.jpg",
+                    meaning: "Falling rocks",
+                },
+                {
+                    src: "img/road-signs/traffic-lights/toucan.png",
+                    meaning: "Toucan crossing display",
+                },
+                {
+                    src: "img/driving-images/road-works-and-temporary/when-red-light-shows-wait-here.jpg",
+                    meaning: "Temporary traffic light information",
+                },
+                {
+                    src: "img/driving-images/warning-signs/danger.jpg",
+                    meaning: "Danger",
+                },
+                {
+                    src: "img/driving-images/warning-signs/quayside.jpg",
+                    meaning: "Quayside",
+                },
+                {
+                    src: "img/driving-images/regulatory-signs/no-overtaking.png",
+                    meaning: "No overtaking",
+                },
+                {
+                    src: "img/driving-images/direction-and-tourist-signs/diversion-triangle-alt.jpg",
+                    meaning: "Follow symbol for diversion route",
+                },
+                {
+                    src: "img/driving-images/information-signs/lane-3-ends.jpg",
+                    meaning: "Lane three is closing",
+                },
+                {
+                    src: "img/driving-images/level-crossing-signs/open-crossing.jpg",
+                    meaning: "Open level crossing",
+                },
+                {
+                    src: "img/driving-images/motorway-signs/lane-closed.jpg",
+                    meaning: "Lane is closed",
+                },
+                {
+                    src: "img/driving-images/motorway-signs/lane-guidance-alt.jpg",
+                    meaning: "Lane guidance",
+                },
             ],
             counter: 0,
         };

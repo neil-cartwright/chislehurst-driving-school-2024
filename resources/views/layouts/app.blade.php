@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <meta name="description" content="@yield('page-description', 'Enjoyable and focused driving lessons in Chislehurst, South East London and working in all surrounding areas. Easy going, experienced professional instructor.')">
+    <meta name="description" content="@yield('page-description', 'Great value enjoyable driving lessons in Chislehurst, South East London with an experienced professional driving instructor.')">
 
     <title>Chislehurst Driving School | @yield('title')</title>
 
@@ -29,23 +29,22 @@
 
     <!-- styles -->
     @stack('styles-after')
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYM7G0SXKE"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-MYM7G0SXKE');
-    </script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MYM7G0SXKE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MYM7G0SXKE');
+</script>
 
 <body class="font-body antialiased">
-    <article id="app" class="is-flex is-flex-direction-column">
+    <div id="app" class="is-flex is-flex-direction-column">
 
         <x-navigation.navbar></x-navigation.navbar>
 
@@ -57,7 +56,7 @@
 
         <x-cookie-consent></x-cookie-consent>
 
-    </article>
+    </div>
     @stack('scripts-after')
 </body>
 

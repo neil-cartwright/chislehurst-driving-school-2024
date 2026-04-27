@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-description', 'Interactive quiz section for learner drivers based on practical subjects')
+@section('page-description', 'A quick interactive quiz for learner drivers based on practical driving lessons.')
 
 @section('main')
     <!-- breadcrumbs -->

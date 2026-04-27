@@ -134,7 +134,7 @@
 
     <div class="modal" :class="{ 'is-active': quizCompleted }">
         <div class="modal-background"></div>
-        <div class="modal-content" style="padding: 0">
+        <div class="modal-content p-2">
             <div
                 class="notification is-white is-flex is-justify-content-center is-align-items-center is-flex-direction-column"
             >
@@ -245,7 +245,7 @@ export default {
                                 }
                             }
                         }.bind(this),
-                        1000
+                        1000,
                     );
                 } // else
             }
@@ -275,7 +275,7 @@ export default {
             this.quizTitle = this.quizTitle.toLowerCase();
             localStorage.setItem(
                 this.quizTitle,
-                this.score + "/" + this.questionsAnswered
+                this.score + "/" + this.questionsAnswered,
             );
         },
     }, // methods

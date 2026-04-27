@@ -14,7 +14,7 @@
                 height="480"></iframe>
         @else
             <div>
-                Please sign up for details
+                please sign in
             </div>
         @endauth
     </div>
@@ -28,7 +28,7 @@
                 height="480"></iframe></iframe>
         @else
             <div>
-                Please sign up for details
+                please sign in
             </div>
         @endauth
     </div>
@@ -42,7 +42,7 @@
                 width="640" height="480"></iframe></iframe>
         @else
             <div>
-                Please sign up for details
+                please sign in
             </div>
         @endauth
     </div>
@@ -56,7 +56,7 @@
                 width="640" height="480"></iframe>
         @else
             <div>
-                Please sign up for details
+                please sign in
             </div>
         @endauth
     </div>
@@ -74,7 +74,7 @@
                 width="640" height="480"></iframe>
         @else
             <div>
-                Please sign up for details
+                please sign in
             </div>
         @endauth
     </div>
@@ -88,7 +88,7 @@
                 width="640" height="480"></iframe>
         @else
             <div>
-                Please sign up for details
+                please sign in
             </div>
         @endauth
     </div>
@@ -103,7 +103,7 @@
                 width="640" height="480"></iframe>
         @else
             <div>
-                Please sign up for details
+                please sign in
             </div>
         @endauth
     </div>
@@ -117,7 +117,7 @@
                 width="640" height="480"></iframe>
         @else
             <div>
-                Please sign up for details
+                please sign in
             </div>
         @endauth
     </div>

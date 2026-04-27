@@ -1,10 +1,12 @@
+@use "../abstracts" as mixins;
+
 .button-cta {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
-    @include mobile {
+    @include mixins.mobile {
         font-size: 16px;
     }
 }

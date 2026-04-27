@@ -1,9 +1,11 @@
+@use "../abstracts" as mixins;
+
 .signs-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 
-    @include mobile {
+    @include mixins.mobile {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -13,4 +15,13 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.grid .cell .box {
+    height: 100%;
+    transition: all 300ms;
+}
+
+.grid .cell a:hover .box {
+    transform: scale(1.025);
 }

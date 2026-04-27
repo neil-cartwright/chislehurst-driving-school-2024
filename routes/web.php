@@ -20,8 +20,6 @@ Route::get('/', function () {
 })->name('index');
 
 
-
-
 require __DIR__ . '/guest.php';
 require __DIR__ . '/auth.php';
 require __DIR__ . '/admin.php';
@@ -32,6 +30,3 @@ require __DIR__ . '/signs.php';
 Route::fallback(function () {
     return response()->view('index');
 });
-
-// require __DIR__ . '/routes-app/test-routes.php';
-// require __DIR__ . '/artisan.php';

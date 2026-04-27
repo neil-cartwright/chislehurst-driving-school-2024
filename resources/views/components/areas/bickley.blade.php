@@ -1,13 +1,54 @@
-<section>
-    <h1 class="title is-size-5">Experienced driving instructor in Bickley</h1>
-    <div class="content w-80ch">
-        <p>I'm based in the London Borough of Bromley, and work in Bickley and Petts Wood most days of the week.</p>
-    </div>
+<x-areas.wrapper>
+    <x-slot:content>
+        <h1 class="title is-size-5">Experienced driving instructor in Bickley</h1>
+        <p>I'm based in the London Borough of Bromley, and provide driving lessons in Bickley and Petts Wood most days
+            of the week. Evening lessons are available Monday - Wednesday, and I work Saturdays. These are often in high
+            demand so please do book ahead.</p>
+        <p>The nearest test centres are <a href="/tests/routes/bromley">Bromley</a>, <a
+                href="/tests/routes/sidcup">Sidcup</a> and <a href="/tests/routes/west-wickham">West Wickham</a>.</p>
+        <p>Driving lessons in Bickley can start at local schools, including Bullers Wood and Ravens Wood.</p>
+        <p>For more information about driving lessons in Bickley and surrounding areas please use the <a href="/contact"
+                class="has-text-weight-bold">contact form</a> or call/text/email.</p>
+    </x-slot:content>
 
-    {{-- <div class="googleMapsWrap">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.7166404743284!2d0.04640087659034623!3d51.389885721786854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8aa4d0551172d%3A0x260eae2ec8a62231!2sBickley%2C%20Bromley!5e0!3m2!1sen!2suk!4v1710836148718!5m2!1sen!2suk"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div> --}}
-
-</section>
+    <x-slot:case_study>
+        <h2 class="tag title is-warning has-text-weight-bold is-size-5">Mini roundabouts</h2>
+        <div class="columns">
+            <div class="column">
+                <div class="content">
+                    <p>Driving lessons in Bickley will inevitably involve driving across mini-roundabouts. You will
+                        see
+                        lots of drivers cutting across mini roundabouts when turning right, but should you?</p>
+                    <blockquote>
+                        <p class="has-text-weight-bold">Highway code rule 188</p>
+                        Mini-roundabouts. Approach these in the same way as normal roundabouts. All vehicles <span
+                            class="has-text-danger has-text-weight-bold">MUST</span> pass
+                        round the central markings except large vehicles which are physically incapable of doing so.
+                        Remember, there is less space to manoeuvre and less time to signal. Avoid making U-turns at
+                        mini-roundabouts. Beware of others doing this.
+                        <span class="has-text-danger has-text-weight-light">Laws RTA 1988 sect 36 & TSRGD regs 10(1) &
+                            16(1)</span>
+                    </blockquote>
+                    <p>When learning to drive on southborough lane in Bickley be especially careful of the
+                        mini-roundabout which has <span class="has-text-weight-bold">
+                            two
+                            lanes</span>. When turning right there is not much room if another vehicle is positioned to
+                        your
+                        left.</p>
+                </div>
+            </div>
+            <div class="column">
+                <figure class="is-flex is-align-items-center is-justify-content-center is-flex-direction-column mb-4">
+                    <img src="{{ asset('/img/road-signs/warnings/roundabout.png') }}" alt="a roundabout warning sign"
+                        class="mb-2">
+                    <figcaption class="has-text-centered">Warning signs are triangles</figcaption>
+                </figure>
+                <figure class="is-flex is-align-items-center is-justify-content-center is-flex-direction-column mb-4">
+                    <img src="{{ asset('/img/road-signs/positive/mini-roundabout.png') }}"
+                        alt="a mini roundabout mandatory sign" class="mb-2">
+                    <figcaption class="has-text-centered">Mini roundabout signs are blue</figcaption>
+                </figure>
+            </div>
+        </div>
+    </x-slot:case_study>
+</x-areas.wrapper>

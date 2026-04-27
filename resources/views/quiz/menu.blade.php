@@ -2,16 +2,18 @@
     $quiz_name = $quiz_name ?? '';
 @endphp
 
-<p class="menu-label strong">Quizzes</p>
-<ul class="menu-list quiz-menu">
+<div class="menu">
+    <p class="menu-label strong">Quizzes</p>
+    <ul class="menu-list quiz-menu">
 
-    @foreach ($quiz_names as $quiz)
-        <li class="quiz-menu-list-item">
-            <a data-quizName="{{ str_replace('-', ' ', $quiz) }}" class="{{ $quiz == $quiz_name ? 'is-active' : '' }}"
-                href="{{ url('quiz/') . '/' . $quiz }}"><span>{{ ucfirst(str_replace('-', ' ', $quiz)) }}</span></a>
-        </li>
-    @endforeach
-</ul>
+        @foreach ($quiz_names as $quiz)
+            <li class="quiz-menu-list-item">
+                <a data-quizName="{{ str_replace('-', ' ', $quiz) }}" class="{{ $quiz == $quiz_name ? 'is-active' : '' }}"
+                    href="{{ url('quiz/') . '/' . $quiz }}"><span>{{ ucfirst(str_replace('-', ' ', $quiz)) }}</span></a>
+            </li>
+        @endforeach
+    </ul>
+</div>
 
 <hr>
 

@@ -1,8 +1,8 @@
 @inject('carbon', 'Carbon\Carbon')
 
-<footer class="footer mt-auto">
+<footer class="footer mt-auto has-background-light">
     <div class="columns">
-        <div class="column is-4 is-6-tablet">
+        <div class="column is-4">
             <div class="menu">
                 <p class="menu-label">Contact</p>
                 <ul class="menu-list">
@@ -23,15 +23,14 @@
         </div>
 
         @guest
-            <div class="column is-4 is-6-tablet ">
+            <div class="column is-4">
                 <div class="menu">
                     <p class="menu-label">Site links</p>
                     <ul class="menu-list">
-                        <li><a href="/areas">Areas</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/prices">Prices</a></li>
-                        <li><a href="/driving-lessons">Driving Lessons</a></li>
-                        <li><a href="/news">News</a></li>
+                        <li><a class="has-background-light" href="/driving-lessons">Driving lessons</a></li>
+                        <li><a class="has-background-light" href="/contact">Contact</a></li>
+                        <li><a class="has-background-light" href="/prices">Prices</a></li>
+                        <li><a class="has-background-light" href="/news">News</a></li>
                     </ul>
                 </div>
             </div>

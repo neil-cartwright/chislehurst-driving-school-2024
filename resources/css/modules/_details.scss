@@ -1,0 +1,19 @@
+details {
+    overflow: hidden;
+}
+
+details::details-content {
+    block-size: 0;
+    transition:
+        block-size 500ms,
+        content-visibility 500ms;
+    transition-behavior: allow-discrete;
+}
+
+details[open]::details-content {
+    block-size: auto;
+}
+
+details p {
+    padding-block: 1rem;
+}

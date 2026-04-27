@@ -1,14 +1,55 @@
-<section>
-    <h1 class="title is-size-5">Experienced driving instructor in Lee and Lewisham</h1>
-    <div class="content w-80ch">
-        <p>Driving lessons in Lee Green and Lewisham are available at certain times of the week. Please get in touch
-            for details of current availability.</p>
-    </div>
+<x-areas.wrapper>
+    <x-slot:content>
+        <h1 class="title is-size-5">Experienced driving instructor in Lee and Lewisham</h1>
+        <p>Providing driving lessons in Lee Green and Lewisham Monday to Saturday.</p>
+        <p>Evening and Weekend lessons in Lee are available. Please use the <a href="/contact"
+                class="has-text-weight-bold">contact form</a> to make an enquiry as demand is high.</p>
+        <p>If you are taking lessons in Lee and would like to book a driving test please note that Hither Green test
+            centre is
+            now permanently closed. The nearest test centres to Lee Green would be <a
+                href="/tests/routes/bromley">Bromley</a>
+            and
+            <a href="/tests/routes/sidcup">Sidcup</a>.
+        <p>Driver tuition in Lee and Lewisham can begin from local schools and colleges, such as Colfe's school in Lee
+            or Eltham
+            College in Mottingham. Pupils often drive home from school on driving lessons once they've learned the
+            basics.</p>
+        </p>
+        <p>Please call/text/whatsapp during office hours for more info, or email anytime.</p>
+    </x-slot:content>
 
-    {{-- <div class="googleMapsWrap">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19891.94181796337!2d-0.020003272591994036!3d51.44910929134412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a9e85f3d842b%3A0x92dfccfd9d6d0ed1!2sLee%2C%20London!5e0!3m2!1sen!2suk!4v1710836471974!5m2!1sen!2suk"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div> --}}
 
-</section>
+    <x-slot:case_study>
+        <h2 class="tag title is-warning has-text-weight-bold is-size-5">Low Traffic Neighbourhoods</h2>
+        <div class="columns">
+            <div class="column">
+                <div class="content">
+                    <p>If you are taking driving lessons in Lee Green and Lewisham keep an eye out for road signs which
+                        are designed to prevent motorised traffic from passing through. </p>
+                    <p>In Lee and Hither Green there are <span class="has-text-weight-bold">bus gates</span>, <span
+                            class="has-text-weight-bold">school streets</span> and also planters, preventing through
+                        traffic.
+                    </p>
+                    <p>Your driving instructor in Lee Green will know where these are, but once you have passed your
+                        driving
+                        test you will need to maintain your knowledge of all the road signs in order to make sure you
+                        don't receive any penalty charge notices.</p>
+                </div>
+            </div>
+            <div class="column has-background-white">
+                <figure class="mb-4 has-text-centered">
+                    <img src="{{ asset('/img/road-signs/prohibitory/no-motor-vehicles.png') }}"
+                        alt="Road sign - no motor vehicles">
+                    <figcaption class="has-text-centered">No Motor Vehicles</figcaption>
+                </figure>
+
+                <figure class="mb-4 has-text-centered">
+                    <img src="{{ asset('/img/driving-images/bus-and-cycle-signs/route-for-cycles-buses-taxis.jpg') }}"
+                        alt="Road sign - bus gate" style="width:150px;">
+                    <figcaption class="has-text-centered">Bus filter</figcaption>
+                </figure>
+
+            </div>
+        </div>
+    </x-slot:case_study>
+</x-areas.wrapper>

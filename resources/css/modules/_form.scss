@@ -1,9 +1,11 @@
+@use "../abstracts" as mixins;
+
 form .card .notification {
     margin-bottom: 0.25rem;
 }
 
 /* FindLessons.vue */
-@include mobile {
+@include mixins.mobile {
     .find-lesson-form {
         .radio-field {
             width: 100%;
@@ -32,7 +34,7 @@ form .card .notification {
         }
         input {
             max-width: 50%;
-            @include until($mobile-small) {
+            @include mixins.until(475) {
                 max-width: 100%;
             }
         }
@@ -53,17 +55,17 @@ form .card .notification {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        background: $light;
+        background: var(--bulma-light);
         padding: 0.5rem;
         gap: 0.5rem;
         .radio {
-            @include mobile {
+            @include mixins.mobile {
                 margin-left: 0;
             }
         }
     }
     .description-control {
-        @include from($tablet) {
+        @include mixins.from(var(--bulma-tablet)) {
             width: 50%;
         }
     }

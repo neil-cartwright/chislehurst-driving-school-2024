@@ -1,15 +1,52 @@
-<section>
-    <h2 class="title is-size-5">Driving Instructor in Chislehurst, BR7</h2>
-    <div class="content w-80ch">
-        <p>I'm based in Elmstead, just off Walden Road. Lessons are available Monday to Thursday and Saturdays. Sundays
-            available upon request. </p>
-        <p>I've been working full-time as a driving instructor in South East London since 2004. I've previously worked
-            with Lanes in Bromley, and also with the AA Driving School. I used to run 'Charlton Driving School' before
-            moving to Chislehurst in 2013.</p>
-    </div>
-    {{-- <div class="googleMapsWrap">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4976.459626279922!2d0.06511509131469627!3d51.41720493846927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8abc4c63abae7%3A0xd9aa890ecba36ddb!2sChislehurst!5e0!3m2!1sen!2suk!4v1582794884092!5m2!1sen!2suk"
-            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div> --}}
-</section>
+    <x-areas.wrapper>
+        <x-slot:content>
+
+            <h1 class="title is-size-5">Driving Instructor in Chislehurst</h1>
+            <p>I live in Chislehurst and have been providing great value manual driving lessons in South
+                London
+                since
+                2004.</p>
+            <p>To make an enquiry about driving lessons in chislehurst or anywhere in the local area please use the <a
+                    href="/contact" class="has-text-weight-bold">contact form</a>. You can email
+                anytime,
+                or call/text/whatsapp during office hours. Please also read the <a href="/faq">Frequently asked
+                    questions</a>
+                page for further information.</p>
+            <p>I provide lessons in BR7 Monday to Saturday, late evenings Monday to Wednesday. Demand for evenings and
+                weekends
+                is high so please do book driving lessons ahead.
+            </p>
+        </x-slot:content>
+
+        <x-slot:case_study>
+            <h2 class="is-size-5 title"><span class="tag is-warning is-large">Chislehurst War Memorial</span>
+            </h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="content">
+                        <p class="has-text-weight-bold">Are you allowed to wait in the yellow box junction when turning
+                            right at Chislehurst War
+                            Memorial?</p>
+                        <p>You will see lots of drivers reluctant to wait in the box junction here. However, if you are
+                            turning right you may enter the box junction as long as your exit road is clear. </p>
+                        <p>The war memorial junction is very narrow. If you don't enter the box junction when turning
+                            right you could cause congestion. This is because following vehicles may not be able to get
+                            past you
+                            while you wait to turn.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <figure>
+
+                        <img src="{{ asset('/img/graphics/box-junction.jpg') }}"
+                            alt="box junction at chislehurst war memorial">
+                        <figcaption class="has-text-centered">
+                            <a href="https://www.highwaycodeuk.co.uk/road-junctions.html" class="is-link"
+                                target="_blank">The highway
+                                code rule 174</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </x-slot:case_study>
+    </x-areas.wrapper>
