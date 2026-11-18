@@ -13,13 +13,15 @@ class QuizController extends Controller
      */
     public function index()
     {
-        return $this->show('junctions');
+        $quiz_names = $this->get_quiz_names();
+
+        return view('quiz.index', compact('quiz_names'));
     }
 
     /**
      * get specified quiz by name
      */
-    public function show($quiz_name)
+    public function show(String $quiz_name)
     {
         $quiz_names = $this->get_quiz_names();
 

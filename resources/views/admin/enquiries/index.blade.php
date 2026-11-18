@@ -30,6 +30,7 @@
                             <tr>
                                 <th></th>
                                 <th>Date</th>
+                                <th>Transmission</th>
                                 <th>Type</th>
                                 <th>Name</th>
                                 <th>Address</th>
@@ -54,7 +55,9 @@
                                             @endif
                                         </a>
                                     </td>
+
                                     <td>{{ $carbon->parse($enquiry->date)->format('d/m/y') }}</td>
+                                    <td>{{ $enquiry->transmission ?? '' }}</td>
                                     <td>{{ $enquiry->type ?? '' }}</td>
                                     <td title="{{ $enquiry->tel }}">{{ $enquiry->name }}</td>
                                     <td>{{ $enquiry->address ?? '' }}</td>

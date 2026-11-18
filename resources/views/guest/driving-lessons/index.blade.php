@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-description', 'Driving lessons in Chislehurst, and South East London')
+@section('page-description', 'Professional driving lessons in Chislehurst, Bromley and South East London')
 
 @section('title', 'Driving lessons')
 
@@ -25,49 +25,77 @@
                         help with driving
                         lessons,
                         depending on the day and time needed.</p>
-                    <div class="columns is-mobile">
-                        <div class="column">
-                            <div class="mb-2">
-                                <p class="has-text-weight-bold mb-1">BR7</p>
-                                <a class="is-block" href="/driving-lessons/chislehurst">Chislehurst</a>
-                            </div>
-                            <div class="mb-2">
-                                <p class="has-text-weight-bold mb-1">BR5</p>
-                                <a class="is-block" href="/driving-lessons/petts-wood">Petts Wood</a>
-                            </div>
-                            <div class="mb-2">
-                                <p class="has-text-weight-bold mb-1">BR1</p>
-                                <a class="is-block" href="/driving-lessons/bromley">Bromley</a>
-                                <a class="is-block" href="/driving-lessons/bickley">Bickley</a>
-                                <a class="is-block" href="/driving-lessons/downham">Downham</a>
-                            </div>
-                            <div class="mb-2">
-                                <p class="has-text-weight-bold mb-1">DA15</p>
-                                <a class="is-block" href="/driving-lessons/sidcup">Sidcup</a>
-                            </div>
+                </div>
 
+
+                <div class="columns is-multiline">
+                    <!-- col 1 -->
+                    <div class="column">
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">BR7</p>
+                            <a class="is-block" href="/driving-lessons/chislehurst">Chislehurst</a>
                         </div>
-                        <div class="column">
-                            <div class="mb-2">
-                                <p class="has-text-weight-bold mb-1">SE9</p>
-                                <a class="is-block" href="/driving-lessons/eltham">Eltham</a>
-                                <a class="is-block" href="/driving-lessons/new-eltham">New Eltham</a>
-                                <a class="is-block" href="/driving-lessons/mottingham">Mottingham</a>
-                            </div>
-                            <div class="mb-2">
-                                <p class="has-text-weight-bold mb-1">SE12</p>
-                                <a class="is-block" href="/driving-lessons/lee">Lee Green</a>
-                                <a class="is-block" href="/driving-lessons/grove-park">Grove Park</a>
-                            </div>
-                            <div class="mb-2">
-                                <p class="has-text-weight-bold mb-1">SE3</p>
-                                <a class="is-block" href="/driving-lessons/kidbrooke">Kidbrooke and
-                                    Blackheath</a>
-                            </div>
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">BR5</p>
+                            <a class="is-block" href="/driving-lessons/petts-wood">Petts Wood</a>
+                        </div>
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">BR6</p>
+                            <a class="is-block" href="/driving-lessons/orpington">Orpington</a>
+                        </div>
+
+                    </div>
+                    <!-- col 2-->
+                    <div class="column">
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">BR1</p>
+                            <a class="is-block" href="/driving-lessons/bromley">Bromley</a>
+                            <a class="is-block" href="/driving-lessons/bickley">Bickley</a>
+                            <a class="is-block" href="/driving-lessons/downham">Downham</a>
+                        </div>
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">BR2</p>
+                            <a class="is-block" href="/driving-lessons/hayes">Hayes</a>
+                        </div>
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">DA15</p>
+                            <a class="is-block" href="/driving-lessons/sidcup">Sidcup</a>
                         </div>
                     </div>
-
-
+                    <!-- col 3 -->
+                    <div class="column">
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">SE9</p>
+                            <a class="is-block" href="/driving-lessons/eltham">Eltham</a>
+                            <a class="is-block" href="/driving-lessons/new-eltham">New Eltham</a>
+                            <a class="is-block" href="/driving-lessons/mottingham">Mottingham</a>
+                        </div>
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">SE12</p>
+                            <a class="is-block" href="/driving-lessons/lee">Lee Green</a>
+                            <a class="is-block" href="/driving-lessons/grove-park">Grove Park</a>
+                        </div>
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">SE13</p>
+                            <a class="is-block" href="/driving-lessons/lewisham">Lewisham and Hither Green</a>
+                        </div>
+                    </div>
+                    <!-- col 4-->
+                    <div class="column">
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">SE3</p>
+                            <a class="is-block" href="/driving-lessons/kidbrooke">Kidbrooke and
+                                Blackheath</a>
+                        </div>
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">SE7</p>
+                            <a class="is-block" href="/driving-lessons/charlton">Charlton</a>
+                        </div>
+                        <div class="mb-2">
+                            <p class="has-text-weight-bold mb-1">SE18</p>
+                            <a class="is-block" href="/driving-lessons/woolwich">Shooters Hill and Woolwich</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <article class="notification">

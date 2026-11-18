@@ -1,7 +1,7 @@
 var questions = [
     {
         imgSrc: "/img/driving-images/regulatory-signs/one-way.png",
-        alt: "one way streets quiz",
+        alt: "one way street sign",
         question: "What does this sign mean?",
         answers: [
             { val: null, correct: false, answer: "Go straight on" },
@@ -14,7 +14,7 @@ var questions = [
 
     {
         imgSrc: "/img/road-signs/prohibitory/no-entry.png",
-        alt: "one way streets quiz",
+        alt: "no entry sign",
         question: "What does this sign mean?",
         answers: [
             { val: null, correct: false, answer: "Stop" },
@@ -28,7 +28,7 @@ var questions = [
 
     {
         imgSrc: "/img/graphics/three-lanes.png",
-        alt: "one way street",
+        alt: "three lanes graphic",
         question:
             "When turning right from a one way street, where should you position the car?",
         answers: [
@@ -43,7 +43,7 @@ var questions = [
 
     {
         imgSrc: "/img/driving-images/bus-and-cycle-signs/contraflow-cycle-lane.jpg",
-        alt: "one way streets quiz",
+        alt: "contraflow cycle lane sign",
         question: "What does this sign mean?",
         answers: [
             { val: null, correct: false, answer: "With flow bicycle lane" },
@@ -56,7 +56,7 @@ var questions = [
 
     {
         imgSrc: "/img/driving-images/regulatory-signs/no-overtaking.png",
-        alt: "one way systems",
+        alt: "no overtaking sign",
         question:
             "True or False. You may overtake on the left when on a one-way street?",
         answers: [
@@ -68,7 +68,7 @@ var questions = [
     },
     {
         imgSrc: "/img/driving-images/traffic-calming/no-priority-over-oncoming-traffic.jpg",
-        alt: "priority",
+        alt: "priority sign",
         question: "What does this sign mean?",
         answers: [
             {
@@ -88,7 +88,7 @@ var questions = [
     },
     {
         imgSrc: "/img/driving-images/warning-signs/two-way-traffic-crossing.jpg",
-        alt: "two way traffic",
+        alt: "two way traffic sign",
         question: "What does this sign mean?",
         answers: [
             {

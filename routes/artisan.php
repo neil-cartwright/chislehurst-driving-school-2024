@@ -19,6 +19,6 @@ Route::get('version', function () {
     dd(app()->version());
 });
 Route::get('/artisan/optimize', function () {
-    Artisan::call('optimize');
+    Artisan::call('optimize:clear');
     dd('optimize');
 });

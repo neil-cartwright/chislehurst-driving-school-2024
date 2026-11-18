@@ -16,7 +16,7 @@
             </span>
             <span>Driving lessons</span></a>
     </li>
-    <li><a href="/quiz/junctions" class="is-flex is-align-items-center">
+    <li><a href="/quiz" class="is-flex is-align-items-center">
             <span class="icon mr-4">
                 <i class="fa fa-graduation-cap has-text-success"></i>
             </span>Quiz</a>
@@ -43,11 +43,11 @@
             <span>Customer reviews</span></a>
     </li>
 
-    <li><a href="/fails" class="is-flex is-align-items-center">
+    <li><a href="/driving-test-fails" class="is-flex is-align-items-center">
             <span class="icon mr-4 has-text-danger">
                 <i class="fa-regular fa-circle-xmark"></i>
             </span>
-            <span>Test fails</span></a>
+            <span>Driving test fails</span></a>
     </li>
 
 </ul>

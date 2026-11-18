@@ -34,6 +34,7 @@
                 <a href="/admin/notes/{{ $customer->id }}" class="level-item button is-text">View all notes</a>
                 <a href="/admin/lesson/create?id={{ $customer->id }}" class="level-item button is-text">Save
                     lesson</a>
+                <a href="/admin/customer/{{ $customer->id }}/progress" class="level-item button is-text">Progress</a>
                 <add-test-date :customer="{{ $customer }}"></add-test-date>
             </div>
 

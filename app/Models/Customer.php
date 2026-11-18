@@ -9,6 +9,10 @@ class Customer extends Model
 {
     use HasFactory;
 
+    protected $casts = [
+        'progress' => 'array', // or 'json'
+    ];
+
     public function lessons()
     {
         return $this->hasMany(Lesson::class);

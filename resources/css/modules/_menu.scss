@@ -16,7 +16,8 @@
 }
 
 .admin-menu,
-.dashboard-menu {
+.dashboard-menu,
+.quiz-menu {
     border-right: 1px solid var(--bulma-text-light);
     .menu-label {
         @include mixins.mobile {

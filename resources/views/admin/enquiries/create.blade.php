@@ -36,6 +36,18 @@
                             </div>
                         </div>
 
+                        <!--  -->
+                        <div class="control my-4">
+                            <label class="radio mr-4">
+                                <input type="radio" name="transmission" value="manual" checked="checked" />
+                                Manual
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="transmission" value="auto" />
+                                Auto
+                            </label>
+                        </div>
+
                         <div class="field w-half">
                             <label for="name" class="label is-flex-grow-0 mr-3">Name
                                 @error('name')
@@ -71,6 +83,8 @@
                                     placeholder="10 Dacre Park BR7 5FP" />
                             </div>
                         </div>
+
+
 
                         <div class="field">
                             <label class="label">Message</label>

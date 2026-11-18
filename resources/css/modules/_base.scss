@@ -27,13 +27,8 @@ body > div#app {
 }
 
 /* hero */
+
 .hero img {
     max-height: 400px;
     object-fit: cover;
 }
-
-// .notification {
-//     @include mobile {
-//         padding: 0.75rem;
-//     }
-// }

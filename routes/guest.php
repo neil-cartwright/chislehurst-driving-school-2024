@@ -36,6 +36,6 @@ Route::get('/reviews', function () {
 
 Route::get('/news', [NewsController::class, 'index']);
 
-Route::get('/fails', function () {
+Route::get('/driving-test-fails', function () {
     return view('guest.driving-test-fails');
 });

@@ -3,7 +3,7 @@
 @endphp
 
 <div class="menu">
-    <p class="menu-label strong">Quizzes</p>
+    <p class="menu-label strong">Quiz subject</p>
     <ul class="menu-list quiz-menu">
 
         @foreach ($quiz_names as $quiz)

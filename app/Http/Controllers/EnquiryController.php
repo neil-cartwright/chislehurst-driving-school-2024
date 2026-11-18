@@ -37,6 +37,7 @@ class EnquiryController extends Controller
         ]);
 
         $enquiry->date = $request->input('date');
+        $enquiry->transmission = $request->input('transmission');
         $enquiry->name = $request->input('name');
         $enquiry->email = $request->input('email');
         $enquiry->tel = $request->input('tel');
@@ -67,6 +68,7 @@ class EnquiryController extends Controller
         $enquiry = Enquiry::find($id);
 
         $enquiry->date = $request->input('date');
+        $enquiry->transmission = $request->input('transmission');
         $enquiry->name = $request->input('name');
         $enquiry->email = $request->input('email');
         $enquiry->tel = $request->input('tel');

@@ -4,9 +4,10 @@
             class="is-flex is-justify-content-space-between is-align-items-center mb-4"
         >
             <h1 class="font-headings">Random driving tips</h1>
-            <a @click="changeTip()" class="button is-small is-danger"
-                ><i class="fa fa-plus"></i
-            ></a>
+            <button @click="changeTip()" class="button is-small is-danger">
+                Next&nbsp;
+                <i class="fa fa-plus"></i>
+            </button>
         </div>
         <div>{{ theTip() }}</div>
     </article>

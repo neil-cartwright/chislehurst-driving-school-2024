@@ -1,5 +1,7 @@
 <template>
-    <div class="tag is-small is-hidden-tablet" ref="card">{{ quizTitle }}</div>
+    <h1 class="tag is-small" ref="card">
+        {{ quizTitle || "Interactive quiz" }}
+    </h1>
     <div class="card">
         <div class="card-header">
             <p class="card-header-title">

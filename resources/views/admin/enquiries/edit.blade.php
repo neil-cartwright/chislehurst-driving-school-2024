@@ -36,6 +36,20 @@
                             </div>
                         </div>
 
+                        <!--  -->
+                        <div class="control my-4">
+                            <label class="radio mr-4">
+                                <input type="radio" name="transmission" value="manual"
+                                    {{ $enquiry->transmission == 'manual' ? 'checked' : '' }} />
+                                Manual
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="transmission" value="auto"
+                                    {{ $enquiry->transmission == 'auto' ? 'checked' : '' }} />
+                                Auto
+                            </label>
+                        </div>
+
                         <div class="field w-half">
                             <label for="name" class="label is-flex-grow-0 mr-3">Name
                                 @error('name')

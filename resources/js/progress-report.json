@@ -1,0 +1,99 @@
+{
+    "Controls": {
+        "Cockpit drill": {"level":"helped"},
+        "Basic controls":{"level":"required"}, 
+        "Advanced controls":{"level":"required"}
+    },
+
+    "Mirrors, vision and use": {"level":"required"},
+    "Signals": {
+        "Correctly":{"level": "required"},
+        "Timing":{"level": "required"},
+        "Arm signals": {"level": "required"}
+    },
+
+    "Moving Off": {
+        "Flat": {"level":"required"},
+        "At an angle": {"level":"required"},
+        "Uphill": {"level":"required"},
+        "Downhill": {"level":"required"},
+        "Busy": {"level":"required"},
+        "From the right": {"level":"required"}},
+
+    "Stopping": {
+        "Accurately":{"level":"required"},
+        "In an emergency": {"level":"required"},
+        "On the right":{"level":"required"}
+    },
+
+    "Anticipation and planning": {
+        "Hazard routine" : {"level":"required"},
+        "Meeting traffic": {"level":"required"},
+        "Buses and bus lanes": {"level":"required"}
+    },
+
+    "Positioning": {
+        "MSM/PSGL": {"level":"required"},
+        "Lanes": {"level":"required"},
+            "One way streets": {"level":"required"}
+    },
+
+    "Junctions": {
+        "Emerging left": {"level":"required"},
+        "Emerging right": {"level":"required"},
+        "Turning left": {"level":"required"},
+        "Turning right":{"level":"required"},
+        "Crossroads": {"level":"required"},
+        "Slip lanes": {"level":"required"},
+        "Y junctions":  {"level":"required"},
+        "Open junctions": {"level":"required"}
+    },
+
+    "Roundabouts": {
+        "Mini-roundabouts": {"level":"required"},
+        "One lane roundabouts":  {"level":"required"},
+        "Two lane roundabouts":  {"level":"required"},
+        "Spiral roundabouts":  {"level":"required"},
+        "Assymetrical roundabouts":  {"level":"required"}
+    },
+
+    "Pedestrian crossings": {
+        "Zebra and parallel": {"level":"required"},
+        "Traffic light crossings": {"level":"required"}
+    },
+
+    "On the road": {
+        "Box junctions" : {"level":"required"},
+        "Width restrictions":  {"level":"required"},
+        "Traffic lights": {"level":"required"}
+    },
+    
+    "Independent driving": {
+        "Following signs":  {"level":"required"},
+        "Following sat nav": {"level":"required"}
+    },
+    
+    "Manoeuvres": {
+        "Straight line reversing": {"level":"required"},
+        "Parallel parking": {"level":"required"},
+        "Reverse bay parking": {"level":"required"},
+        "Forwards bay parking": {"level":"required"},
+        "Three point turns": {"level":"required"},
+        "U turns": {"level":"required"},
+        "Reversing around a corner": {"level":"required"}
+    },
+    
+    "Out of town": {
+        "Dual carriageways": {"level":"required"},
+        "Motorways": {"level":"required"},
+        "Country roads": {"level":"required"}
+    },
+
+    "Vehicle maintenance": {
+        "Show me questions": {"level":"required"},
+        "Tell me questions":{"level":"required"},
+        "Under the bonnet": {"level":"required"}
+    }
+ 
+}
+    

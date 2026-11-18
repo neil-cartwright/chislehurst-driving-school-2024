@@ -36,6 +36,10 @@ import VideoModal from "./components/VideoModal.vue";
 import AddTestDate from "./components/AddTestDate.vue";
 import SummaryComponent from "./components/SummaryComponent.vue";
 import EnquiryMessage from "./components/EnquiryMessage.vue";
+import AreaSignsComponent from "./components/AreaSignsComponent.vue";
+import FailsCarousel from "./components/FailsCarousel.vue";
+
+// import ProgressReport from "./components/ProgressReport.vue";
 // routes app
 
 createApp({})
@@ -71,6 +75,9 @@ createApp({})
     .component("AddTestDate", AddTestDate)
     .component("SummaryComponent", SummaryComponent)
     .component("EnquiryMessage", EnquiryMessage)
+    .component("AreaSignsComponent", AreaSignsComponent)
+    .component("FailsCarousel", FailsCarousel)
+    // .component("ProgressReport", ProgressReport)
     .mount("#app");
 
 import { selectElementContents } from "./helpers";

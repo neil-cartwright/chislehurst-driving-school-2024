@@ -14,7 +14,8 @@
                 <li><a href="{{ route('index') }}">Home</a></li>
 
             @endauth
-            <li class="is-active"><a>Test routes</a></li>
+            <li class="is-active"><a>Tests</a></li>
+            <li class="is-active"><a>Routes</a></li>
             <li class="is-active"><a>{{ ucfirst($area) }}</a></li>
         </ul>
     </nav>
@@ -24,17 +25,16 @@
                 @include('user.menu')
             </div>
             <div class="column is-9">
-                <div class="hero is-light mb-6">
-                    <div class="hero-body">
-                        <p class="title">{{ ucfirst(str_replace('-', ' ', $area)) }} driving test centre</p>
-                        <p class="subtitle">Driving test routes</p>
+                <div class="hero is-white mb-6">
+                    <div class="hero-body is-absolute">
+                        <h1 class="title">{{ ucwords(str_replace('-', ' ', $area)) }} driving test routes</h1>
+                        <h2 class="subtitle">Driving test routes for {{ ucwords(str_replace('-', ' ', $area)) }}
+                            driving test centre</h2>
                     </div>
                 </div>
                 <!-- nested cols -->
                 <div class="columns is-multiline">
-
                     @include('test-routes/routes/' . $area)
-
                 </div>
             </div>
         </div>

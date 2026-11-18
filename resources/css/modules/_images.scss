@@ -11,3 +11,14 @@
         border-radius: 3px;
     }
 }
+
+.case-study figure,
+.case-study figcaption {
+    text-align: center;
+}
+.case-study img.image {
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}

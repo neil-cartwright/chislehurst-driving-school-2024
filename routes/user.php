@@ -6,6 +6,8 @@ use App\Http\Controllers\TextbookController;
 use App\Http\Controllers\HandoutController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\TestRouteController;
+use App\Http\Controllers\ProgressReportController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
@@ -24,6 +26,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/test/routes/video/{route}', [TestRouteController::class, 'video'])->name('test.dashcam');
 
     Route::get('/driver-active', [DriverActiveController::class, 'index'])->name('driver-active');
+
+    Route::get('/progress-report', [ProgressReportController::class, 'index'])->name('progress-report');
 });
 
 /* test routes */

@@ -1,5 +1,5 @@
 <template>
-    <div
+    <article
         class="card learn-some-road-signs is-road-signs-component match-height"
     >
         <div class="card-header">
@@ -21,6 +21,7 @@
                                     v-bind:src="signs[counter].src"
                                     v-bind:alt="`UK road sign: ${signs[counter].meaning}
                                 `"
+                                    loading="lazy"
                                 />
                             </figure>
                         </div>
@@ -60,7 +61,7 @@
                 </span>
             </div>
         </div>
-    </div>
+    </article>
 </template>
 
 <style scoped>
@@ -82,10 +83,9 @@ export default {
         return {
             signs: [
                 {
-                    src: "img/driving-images/warning-signs/toads.jpg",
-                    meaning: "Migratory toad crossing",
+                    src: "/img/driving-images/warning-signs/ducks.jpg",
+                    meaning: "Warning: Ducks",
                 },
-
                 {
                     src: "img/road-signs/motorways/national-speed-limit.png",
                     meaning: "National speed limit",

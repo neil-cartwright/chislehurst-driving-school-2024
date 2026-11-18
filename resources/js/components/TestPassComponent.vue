@@ -1,13 +1,20 @@
 <template>
-    <section>
-        <Carousel>
-            <Slide v-for="(testPass, idx) in lastFifteenPasses" :key="testPass">
-                <div class="notification">
+    <article>
+        <div class="notification">
+            <h3 class="mb-4 has-text-weight-bold is-uppercase is-size-6">
+                Driving Test Success
+            </h3>
+            <Carousel class="mb-4">
+                <Slide v-for="(testPass, idx) in lastTenPasses" :key="testPass">
                     <div class="flex-container">
                         <img
                             :src="testPass.img"
-                            v-bind:alt="'Driving test pass in ' + testPass.area"
-                            class="image test-pass-carousel-image is-inline"
+                            v-bind:alt="
+                                'Test pass photo for learner driver taking driving lessons in ' +
+                                testPass.area
+                            "
+                            class="image is-inline"
+                            loading="lazy"
                         />
                         <p>
                             Well done to {{ testPass.name }} from
@@ -21,14 +28,14 @@
                             {{ testPass.datePassed }}.
                         </p>
                     </div>
-                </div>
-            </Slide>
+                </Slide>
 
-            <template #addons>
-                <navigation />
-            </template>
-        </Carousel>
-    </section>
+                <template #addons>
+                    <navigation />
+                </template>
+            </Carousel>
+        </div>
+    </article>
 </template>
 
 <script setup>
@@ -37,8 +44,8 @@ import { computed } from "vue";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 
-const lastFifteenPasses = computed(() => {
-    return drivingTestPasses.slice(0, 20);
+const lastTenPasses = computed(() => {
+    return drivingTestPasses.slice(0, 10);
 });
 </script>
 
@@ -46,6 +53,12 @@ const lastFifteenPasses = computed(() => {
 :is(img) {
     height: 200px;
     width: 150px;
+    user-select: none; /* Disable selection */
+    -webkit-user-drag: none; /* For WebKit browsers (Chrome and Safari) */
+    -webkit-user-select: none;
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer */
+    pointer-events: none;
 }
 .flex-container {
     display: flex;

@@ -40,19 +40,18 @@
                     <details class="notification">
                         <summary class="mb-2 has-text-weight-bold cursor-pointer">How long is the waiting list for driving
                             tests?</summary>
-                        <p>Locally the waiting list for tests is 22 weeks, or approximately 5 months. If you pass your
-                            theory test when you start your driving lessons then your driving test should come around at
-                            about the right time, when you're ready.</p>
+                        <p>Locally the waiting list for tests is 23 weeks, or approximately 5 months.</p>
                     </details>
 
                     <details class="notification">
                         <summary class="mb-2 has-text-weight-bold cursor-pointer">How can I get an earlier driving test?
                         </summary>
-                        <p>One of the best ways of securing an earlier test has been to ask your driving instructor to use
-                            their network to swap with another instructor. Unfortunately the government is stopping this
-                            practice in order to try to prevent third party resellers from abusing the booking system. </p>
-                        <p>Hopefully the changes will improve the situation, but until more examiners are employed the
-                            waiting list is likely to remain fairly long.</p>
+                        <p>The DVSA has just released guidance on how to swap your test with another learner driver: <a
+                                target="_blank"
+                                href="https://www.gov.uk/guidance/swapping-your-driving-test-with-another-learner-driver">https://www.gov.uk/guidance/swapping-your-driving-test-with-another-learner-driver</a>
+                        </p>
+                        <p>Hopefully the recent booking system policy changes will improve the situation, with current
+                            waiting lists at 23 weeks.</p>
                     </details>
 
 

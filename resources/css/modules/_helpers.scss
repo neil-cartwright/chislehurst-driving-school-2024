@@ -58,3 +58,10 @@ a.is-hoverable {
 a.is-hoverable:hover i {
     color: var(--bulma-link);
 }
+
+.grow-on-hover {
+    transition: transform 0.3s;
+}
+.grow-on-hover:hover {
+    transform: scale(1.05);
+}

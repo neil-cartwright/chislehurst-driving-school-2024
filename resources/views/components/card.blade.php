@@ -11,9 +11,11 @@
             @endisset
     </div>
 @endif
-<div class="card-content overflow-x-scroll">
-    {{ $content }}
-</div>
+@if (isset($content))
+    <div class="card-content overflow-x-scroll">
+        {{ $content }}
+    </div>
+@endif
 @if (isset($footer))
     <div class="card-footer">
         {{ $footer }}

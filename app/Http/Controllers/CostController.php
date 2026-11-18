@@ -157,7 +157,7 @@ class CostController extends Controller
     }
 
     /* averages */
-    public function averages($year = '2025')
+    public function averages($year = '2026')
     {
         $from = date($year . '-04-01');
         $to = Carbon::create($from)->addYear()->format('Y-m-d');
@@ -165,7 +165,7 @@ class CostController extends Controller
         $lessons = Lesson::whereBetween('lesson_date', [$from, $to])->orderBy('created_at', 'asc')
             ->get()
             ->groupBy(function ($val) {
-                return Carbon::parse($val->created_at)->format('M');
+                return Carbon::parse($val->lesson_date)->format('M');
             });
 
         $costs = Cost::whereBetween('date_of_purchase', [$from, $to])->orderBy('date_of_purchase', 'asc')

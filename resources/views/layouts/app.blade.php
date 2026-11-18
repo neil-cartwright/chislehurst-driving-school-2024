@@ -4,13 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <meta name="description" content="@yield('page-description', 'Great value enjoyable driving lessons in Chislehurst, South East London with an experienced professional driving instructor.')">
-
     <title>Chislehurst Driving School | @yield('title')</title>
 
-    <!-- Font -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,13 +19,19 @@
     <link href="{{ asset('/font-awesome/css/brands.css') }}" rel="stylesheet" media="print" onload="this.media='all'">
     <link href="{{ asset('/font-awesome/css/solid.css') }}" rel="stylesheet" media="print" onload="this.media='all'">
 
-    <!-- Scripts -->
+    <!-- injections -->
     @stack('scripts-before')
     @vite(['resources/css/app.scss', 'resources/js/app.js'])
-
-    <!-- styles -->
     @stack('styles-after')
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <meta name="description" content="@yield('page-description', 'Contact Neil on 07917 042 740. Great value enjoyable driving lessons in Chislehurst and South East London with an experienced professional driving instructor.')">
+
+    <link rel="canonical" href="{{ url(Request::url()) }}" />
+
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYM7G0SXKE"></script>
 <script>
@@ -57,7 +59,9 @@
         <x-cookie-consent></x-cookie-consent>
 
     </div>
+
     @stack('scripts-after')
+
 </body>
 
 </html>

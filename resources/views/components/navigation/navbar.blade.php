@@ -1,10 +1,13 @@
 <nav class="navbar" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item font-headings is-size-5 is-size-6-mobile " href="{{ url('/') }}">
-            <span class="icon is-large has-text-success">
-                <i class="fas fa-road"></i>
-            </span>
-            Chislehurst Driving School
+        <a class="navbar-item font-headings is-size-5 is-size-6-mobile" href="{{ url('/') }}">
+            <div class="has-border-success is-rounded">
+                <span class="icon is-large has-text-success">
+                    <i class="fas fa-road"></i>
+                </span>
+                <span class="">Chislehurst Driving
+                    School</span>
+            </div>
         </a>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-navbar">
             <span aria-hidden="true"></span>
@@ -59,7 +62,7 @@
                 <a href="/prices" class="navbar-item ml-2">Prices</a>
                 <a href="/contact" class="navbar-item ml-2">Contact</a>
 
-                <div class="navbar-item has-dropdown is-hoverable is-hidden-desktop-only">
+                <div class="navbar-item has-dropdown is-hidden-desktop-only">
                     <a class="navbar-link ml-2">
                         More
                     </a>
@@ -69,7 +72,7 @@
                         <a href="/signs/warning-signs" class="navbar-item">Signs</a>
                         <a href="/tests/routes" class="navbar-item ">Test routes</a>
                         <a href="/driving-lessons" class="navbar-item">Driving lessons</a>
-                        <a href="/fails" class="navbar-item">Driving test fails</a>
+                        <a href="/driving-test-fails" class="navbar-item">Driving test fails</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +82,7 @@
         <div class="navbar-item">
             <div class="buttons">
                 @guest
-                    <a href="/login" class="button is-success has-text-white has-text-weight-bold">
+                    <a href="/login" class="button is-text">
                         Sign in
                     </a>
                 @endguest

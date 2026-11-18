@@ -1,10 +1,10 @@
 <template>
-    <div class="card mb-4" :key="reRenderKey">
+    <article class="card mb-4" :key="reRenderKey">
         <div class="card-header">
             <div
-                class="card-header-title has-text-weight-normal is-uppercase font-headings is-size-6"
+                class="card-header-title has-text-weight-normal is-uppercase font-headings is-size-7"
             >
-                Pairs
+                Matching pairs
             </div>
             <div class="card-header-icon is-size-7">
                 <span v-if="previousHighScore"
@@ -47,7 +47,7 @@
                 </button>
             </div>
         </div>
-    </div>
+    </article>
 </template>
 <script setup>
 import pairsImages from "../pairs-images.js";
@@ -74,7 +74,7 @@ const flipTheCard = (event, n) => {
         event.target.parentElement.parentElement.classList.toggle("flipped");
         if (
             event.target.parentElement.parentElement.classList.contains(
-                "matched"
+                "matched",
             )
         ) {
             return;

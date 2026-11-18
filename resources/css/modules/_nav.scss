@@ -45,6 +45,21 @@ a.navbar-item:hover {
         background-color: none;
     }
 }
+/* force dropdown to be closed */
+@include mixins.mobile {
+    .navbar-item {
+        &.has-dropdown {
+            .navbar-dropdown {
+                display: none;
+            }
+            &.is-active {
+                .navbar-dropdown {
+                    display: block;
+                }
+            }
+        }
+    }
+}
 
 .notification .areas-list a.tag {
     text-decoration: none;

@@ -2,17 +2,19 @@
        <x-slot:content>
            <h2 class="title is-size-5">Experienced driving instructor in Bromley</h2>
 
-           <p>Providing Driving lessons in Bromley and Orpington Monday to Saturday. <span class="has-text-weight-bold">
-                   Evening and Weekend lessons
-                   available
-               </span> but
-               in high demand. Please use the <a href="/contact" class="has-text-weight-bold">contact form</a> to make an
+           <p>Providing <strong>reliable</strong> and <strong>punctual</strong> driving lessons in Bromley
+               Monday to Saturday.
+               <span class="has-text-weight-bold">
+                   Evening and Saturday lessons
+                   available</span>. Please use the <a href="/contact" class="has-text-weight-bold">contact form</a> to
+               make an
                enquiry. Email anytime, or call/text/whatsapp for more information.
            </p>
-           <p> If you are learning to drive in Bromley the nearest driving test centres are
+           <p> The closest driving test centres are
                are <a href="/tests/routes/bromley">Bromley</a> and <a href="/tests/routes/west-wickham">West
                    Wickham</a>.</p>
-           <p>Driving lessons in Bromley can start straight from 6th form colleges at the end of the school day.
+           <p>Driving lessons in the Bromley area can start straight from 6th form colleges at the end of the school
+               day.
                Students are
                encouraged to learn to
                drive home from school, and I often begin driving lessons from
@@ -21,19 +23,22 @@
        </x-slot:content>
 
        <x-slot:case_study>
-           <h2 class="tag title is-warning has-text-weight-bold is-size-5">Bus Lanes</h2>
+           <h2 class="tag title is-warning has-text-weight-bold is-medium" id="bus-lanes">Driving lessons in Bromley</h2>
            <div class="columns">
-               <div class="column">
+               <div class="column is-two-thirds">
                    <div class="content">
+                       <p class="title is-size-6">How to deal with bus lanes</p>
 
                        <p>
                            If you're taking driving lessons in Bromley you might encounter a bus lane on Widmore road.
-                           You
-                           should use bus lanes if they are outside the hours of operation, unless there is a good
+                           <strong>
+                               You
+                               should use bus lanes if they are outside the hours of operation,
+                           </strong> unless there is a good
                            reason
-                           not to.
+                           not to. Allow faster moving traffic to pass on your right (offside) wherever possible.
                        </p>
-                       <p>If you're travelling between Catford and Bromley on your driving lessons there are a string of
+                       <p>If you're travelling between Catford and Bromley there are a string of
                            bus lanes
                            which currently you cannot use. Bromley road (A21) is a <a
                                href="https://tfl.gov.uk/modes/driving/red-routes" target="_blank">red route</a>, and bus
@@ -51,20 +56,28 @@
                                unload where this is not prohibited.
                            </p>
                        </blockquote>
+
+                       <p>When you get to the end of the bus lane, often just before traffic lights, ensure you plan
+                           ahead, use the MSM routine, and select the correct lane for where you intend to go next.</p>
+                       <figure>
+                           <img src="{{ asset('/img/road-signs/bus-lanes/end-of-bus-lane.png') }}"
+                               alt="end of bus lane sign" style="width:150px;">
+                       </figure>
                    </div>
                </div>
                <div class="column">
                    <figure class="has-text-centered mb-4">
                        <img src="{{ asset('/img/road-signs/webp/bus-lanes/bus-lane.webp') }}" alt="A bus lane sign"
-                           class="" style="width:200px;">
+                           class="image">
                        <figcaption>If no times are displayed you cannot use the bus lane</figcaption>
                    </figure>
 
-                   <figure class="has-text-centered mb-2">
+                   <figure class="has-text-centered mb-4">
                        <img src="{{ asset('/img/road-signs/bus-lanes/bus-lane-with-times.png') }}"
-                           alt="A bus lane sign with times showing" class="" style="width:200px;">
+                           alt="A bus lane sign with times showing" class="image">
                        <figcaption>You could use this bus lane outside the hours displayed</figcaption>
                    </figure>
+
                </div>
            </div>
        </x-slot:case_study>

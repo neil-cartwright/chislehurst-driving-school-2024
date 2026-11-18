@@ -2,21 +2,21 @@
     <x-slot:content>
         <h1 class="title is-size-5">Experienced driving instructor in New Eltham</h1>
 
-        <p>I'm an <strong>independent driving instructor</strong>, based in Chislehurst, not far from New Eltham.
+        <p>Providing great value enjoyable driver training in New Eltham, London SE9 and surrounding areas.
         </p>
-        <p>I've been working as a driving instructor in New Eltham since 2004 and during that time I've taught
+        <p>I've been working as a driving instructor since 2004 and during that time I've taught
             hundreds
             of people in
             Eltham, New
             Eltham and across South
             East London. </p>
-        <p>If you're taking driving lessons in New Eltham the nearest test centre would be Sidcup. You can find some
+        <p>The nearest test centre would be Sidcup. You can find some
             of
             the <a href="/tests/routes/sidcup" class="has-text-weight-bold">test routes</a> on my website. </p>
-        <p>Driving lessons in New Eltham can start and finish at local schools and colleges, including Eltham
+        <p>Lessons can start and finish at local schools and colleges, including Eltham
             College.
             Leigh
-            Stationers and Eltham Hill. If you're looking for driving lessons straight after work lessons can start
+            Stationers and Eltham Hill. If you're looking for driving lessons straight after work they could start
             at
             local train stations, including
             Eltham, New Eltham and Mottingham.</p>
@@ -27,18 +27,26 @@
     </x-slot:content>
 
     <x-slot:case_study>
-        <h2 class="tag title is-warning has-text-weight-bold is-size-5">Turning right at a crossroads</h2>
+        <h2 class="tag title is-medium is-warning has-text-weight-bold" id="crossroads">Driving lessons in New Eltham</h2>
 
         <div class="columns">
-            <div class="column">
+            <div class="column is-three-fifths">
                 <div class="content">
-                    <p>Driving lesson in New Eltham often involve learning to turn right at traffic lights, either at
+                    <p class="title is-size-6">How to deal with turning right at traffic lights</p>
+                    <p>Soon after starting to drive in New Eltham you will need to learn to turn right at traffic
+                        lights, either at
                         fiveways or by New Eltham train station.</p>
-                    <p>Generally when dealing with traffic light right turns in New Eltham and Sidcup you will need to
+                    <p>Generally when dealing with traffic light right turns locally you will need to
                         pass oncoming vehicles using
                         the left side to left side method. Look out for road markings and filter lights.</p>
+                    <figure class="mb-4 has-text-centered">
+                        <img src="{{ asset('/img/graphics/turning-right-at-crossroads.jpg') }}"
+                            alt="Illustration of vehicles passing eachother when turning right at crossroads">
+                        <figcaption class="has-text-centered">Turning right at crossroads</figcaption>
+                    </figure>
+
                     <blockquote>
-                        <p>Highway code rule 181</p>
+                        <p class="has-text-weight-bold">Highway code rule 181</p>
                         When turning right at crossroads where an oncoming vehicle is also turning right, there is a
                         choice of two methods
                         <ul>
@@ -58,14 +66,47 @@
 
 
                     </blockquote>
+                    <p>When turning right at traffic lights pay attention to changing conditions and be prepared to turn
+                        promptly when there is a safe opportunity. The traffic to your left
+                        and
+                        right might begin to move sooner than you expect.</p>
+                    <p>Avoid waiting across the pedestrian crossing section of the traffic lights as you may end up
+                        preventing pedestrians and also wheelchair users from crossing the road. </p>
+
+                    <figure class="mb-4 has-text-centered">
+                        <img src="{{ asset('/img/graphics/rule-192-keep-the-crossing-clear_orig.jpg') }}"
+                            alt="Keep the crossing clear" class="">
+                        <figcaption class="has-text-centered">Keep crossings clear</figcaption>
+                    </figure>
                 </div>
             </div>
             <div class="column">
+
+
                 <figure class="mb-4 has-text-centered">
-                    <img src="{{ asset('/img/graphics/turning-right-at-crossroads.jpg') }}"
-                        alt="Illustration of vehicles passing eachother when turning right at crossroads">
-                    <figcaption class="has-text-centered">Turning right at crossroads</figcaption>
+                    <img src="{{ asset('/img/road-signs/warnings/crossroad.png') }}" alt="Warning sign, crossroads"
+                        class="image">
+                    <figcaption class="has-text-centered">Warning of crossroads ahead</figcaption>
                 </figure>
+
+                <figure class="mb-2 has-text-centered">
+                    <img src="{{ asset('/img/road-signs/warnings/staggered-junction.png') }}"
+                        alt="Warning sign, staggered crossroads" class="image">
+                    <figcaption class="has-text-centered">Staggered crossroads ahead</figcaption>
+                </figure>
+
+                <p class="is-italic has-text-centered mb-4">Right side to right side turning might be employed at
+                    certain
+                    staggered
+                    junctions</p>
+
+
+                <figure class="mb-4 has-text-centered">
+                    <img src="{{ asset('/img/road-signs/warnings/right-bend-crossroad.png') }}"
+                        alt="Warning sign, staggered crossroads" class="image">
+                    <figcaption class="has-text-centered is-italic">The major road has a wider line</figcaption>
+                </figure>
+
             </div>
         </div>
     </x-slot:case_study>

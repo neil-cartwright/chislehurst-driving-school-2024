@@ -2,25 +2,24 @@
     <x-slot:content>
         <h1 class="title is-size-5">Experienced driving instructor in Sidcup</h1>
 
-        <p>Driving lessons in Sidcup available Monday to Saturday.</p>
-        <p>I've been a driving instructor in Sidcup for 20 years. If you are planning to take a driving test here,
-            ensure you get plenty of experience driving in the area.</p>
-        <p>If you are learning to drive in Sidcup there are spiral roundabouts (Crittals Corner), national speed limit
-            slip lanes (Sidcup bypass),
-            country
-            lanes (Swanley) and dual carriageways (A2,A20,A224). The huge variety of road and traffic types make Sidcup
-            a
-            fun and interesting place to be a driving instructor. </p>
-        <p><a href="/tests/routes/sidcup">Check some of the test routes.</a></p>
-
-
+        <p>Enjoyable great value driving lessons in Sidcup and Blackfen available Monday to Saturday.</p>
+        <p>Please use the <a href="/contact" class="has-text-weight-bold">contact form</a> or email anytime. You can also
+            <a href="tel:07917042740">call/text/whatsapp</a> anytime between 9am and 8pm. If I don't answer straight away
+            please leave a message.
+        </p>
+        <p>Learn at your own pace. Full theory and driving test support is provided. I teach in a manual skoda fabia,
+            which is
+            great for people of all shapes and sizes! </p>
+        <p><a href="/tests/routes/sidcup">Check some of the sidcup test routes.</a></p>
     </x-slot:content>
 
     <x-slot:case_study>
-        <h2 class="tag title is-warning has-text-weight-bold is-size-5">Turning right on dual carriageways</h2>
+        <h2 class="tag title is-warning has-text-weight-bold is-medium" id="dual-carriageways">Driving lessons in Sidcup
+        </h2>
         <div class="columns">
-            <div class="column">
+            <div class="column is-two-thirds">
                 <div class="content">
+                    <p class="title is-size-6">How to deal with crossing a dual carriageway</p>
                     <p>If you are taking driving lessons in Sidcup you should get experience of turning right across
                         North Cray Road from St James Way. You will need to emerge from St James Way in two stages.</p>
                     <blockquote>
@@ -37,14 +36,17 @@
                                 you can
                                 cross both carriageways in one go.</li>
                         </ul>
-
                     </blockquote>
+                    <p><strong>Check you're in the correct gear</strong> before moving off, and<strong>
+                            look out for other
+                            vehicles making u-turns
+                        </strong> from the central reservation. </p>
                 </div>
             </div>
             <div class="column">
                 <figure class="has-text-centered mb-2">
                     <img src="{{ asset('/img/graphics/right-turn-dual-carriageway.jpg') }}"
-                        alt="Turning right on a dual carriageway" class="">
+                        alt="Turning right on a dual carriageway">
                     <figcaption>Make sure you can fit!</figcaption>
                 </figure>
             </div>

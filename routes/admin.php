@@ -16,6 +16,7 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\SummaryController;
 use App\Http\Controllers\EnquiryController;
+use App\Http\Controllers\ProgressReportController;
 
 
 
@@ -142,4 +143,10 @@ Route::middleware('admin')->group(function () {
     Route::post('/admin/customer/test', [TestController::class, 'store']);
     Route::get('/admin/customers/tests/index', [TestController::class, 'index']);
     // Route::get('/admin/customers/tests/all', [TestController::class, 'tests']);
+
+    /**
+     *  Progress Reports
+     */
+    Route::get('/admin/customer/{id}/progress', [ProgressReportController::class, 'show']);
+    Route::post('/admin/customer/{id}/progress', [ProgressReportController::class, 'store']);
 });

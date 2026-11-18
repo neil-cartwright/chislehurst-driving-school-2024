@@ -126,7 +126,7 @@
                     <i class="fa fa-search"></i>
                 </span>
                 <a class="{{ request()->routeIs('admin.costs.averages') ? 'is-active' : '' }}"
-                    href="/admin/costs/averages/2024">Monthly
+                    href="/admin/costs/averages/2026">Monthly
                     averages</a>
             </li>
 

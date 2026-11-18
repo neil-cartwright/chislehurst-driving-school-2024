@@ -34,6 +34,14 @@
                     </ul>
                 </div>
             </div>
+            <div class="column is-4">
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li><a class="has-background-light is-size-7-mobile">&copy; Highway code images crown copyright</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         @endguest
     </div>
 

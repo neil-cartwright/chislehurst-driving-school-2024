@@ -10,7 +10,7 @@
 
         <p class="menu-label">Gov.uk links</p>
         <ul class="menu-list">
-            <li class="has-text-weight-bold"><a target="_blank" href="https://readytopass.campaign.gov.uk/"><i
+            <li><a target="_blank" href="https://readytopass.campaign.gov.uk/"><i
                         class="fa-solid fa-arrow-up-right-from-square has-text-grey-light mr-4"></i>Ready to pass?</a>
             </li>
             <li><a target="_blank" href="https://www.gov.uk/learn-to-drive-a-car"><i
@@ -28,18 +28,19 @@
 
     </aside>
 
-    <div class="is-flex is-flex-direction-column is-align-items-center mb-4">
+    <aside class="is-flex is-flex-direction-column is-align-items-center mb-4">
         <a href="https://app.theorytestpro.co.uk/login"><img
-                src="https://app.theorytestpro.co.uk/assets/ttp_300x90-banner-grey.png"
-                alt="theory test pro logo, theory test practice for learner drivers"></a>
+                src="{{ asset('/img/graphics/ttp_300x90-banner-grey.png') }}"
+                alt="theory test pro logo, theory test practice for learner drivers" loading="lazy"></a>
         <a href="https://www.driving.org/"><img src="{{ asset('/img/graphics/DIA-Logo-Blue-Horizontal-Logo_.jpg') }}"
-                alt="driving instructors association logo"></a>
+                alt="driving instructors association logo" loading="lazy"></a>
         <a href="https://www.driveractive.com/"><img src="{{ asset('/img/graphics/driver-active-logo-lg.png') }}"
-                alt="driver active website logo"></a>
-    </div>
+                alt="driver active website logo" loading="lazy"></a>
+    </aside>
 
     <pairs-component></pairs-component>
 
     <tip-of-the-day></tip-of-the-day>
+
 
 </div>

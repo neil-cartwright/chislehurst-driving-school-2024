@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('page-description', 'A description of some driving test fails which other learner drivers might benefit from
+@section('page-description',
+    'A description of some driving test fails which other learner drivers might benefit from
     reading about')
 
 @section('title', 'Driving test fails')
@@ -22,7 +23,6 @@
                         centre disappointed and
                         a bit
                         frustrated.
-
                     </p>
                     <p>Learning from your own mistakes is important, but <span class="has-text-weight-bold">it is much
                             cheaper to learn from other people's.</span></p>

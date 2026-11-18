@@ -1,19 +1,20 @@
 <template>
-    <div class="notification">
+    <article class="notification">
         <div class="is-flex is-justify-content-space-between">
-            <h6 class="animated is-uppercase has-text-weight-bold">
+            <h3 class="animated is-uppercase has-text-weight-bold">
                 Customer reviews
                 <span class="has-text-weight-light is-size-7"
                     >{{ counter + 1 }}/{{ recommendations.length + 1 }}</span
                 >
-            </h6>
+            </h3>
             <div>
-                <a
+                <button
                     class="button is-small is-link"
                     @click="next"
                     title="Read some more recommendations"
-                    >next &gt;&gt;</a
                 >
+                    next &gt;&gt;
+                </button>
             </div>
         </div>
         <br />
@@ -22,13 +23,13 @@
                 <div class="content italic">
                     <p>&ldquo;{{ recommendations[counter].comment }}&rdquo;</p>
                     <p class="has-text-right">
-                        - {{ recommendations[counter].name }},
+                        - {{ recommendations[counter].name.match(/\S+/)[0] }},
                         {{ recommendations[counter].area }}
                     </p>
                 </div>
             </div>
         </transition>
-    </div>
+    </article>
 </template>
 <style scoped>
 .fade-enter-active,

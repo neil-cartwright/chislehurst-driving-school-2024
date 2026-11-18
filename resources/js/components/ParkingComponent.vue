@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <article class="card">
         <div class="card-header">
             <div
                 class="card-header-title font-headings has-text-weight-normal is-centered"
@@ -123,7 +123,7 @@
                 </button>
             </div>
         </div>
-    </div>
+    </article>
 </template>
 
 <style scoped>
@@ -176,7 +176,9 @@
     background-position: center center;
     left: 120px;
     top: 500px;
-    transition: top 3s ease-in-out, left 3s ease-in-out,
+    transition:
+        top 3s ease-in-out,
+        left 3s ease-in-out,
         transform 3s ease-in-out;
 }
 .parking-title {

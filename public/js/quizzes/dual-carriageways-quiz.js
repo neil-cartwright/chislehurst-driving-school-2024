@@ -1,7 +1,7 @@
 var questions = [
     {
         imgSrc: "/img/road-signs/motorways/dual-carriageway-ahead.png",
-        alt: "Dual carriageways quiz",
+        alt: "dual carriageway ahead sign",
         question: "What exactly is a dual carriageway?",
         answers: [
             { val: null, correct: false, answer: "A road with two lanes" },
@@ -22,7 +22,7 @@ var questions = [
     },
     {
         imgSrc: "/img/road-signs/motorways/national-speed-limit.png",
-        alt: "Dual carriageways quiz",
+        alt: "national speed limit sign",
         question:
             "What is the national speed limit for cars on a dual carriageway?",
         answers: [
@@ -44,7 +44,7 @@ var questions = [
     },
     {
         imgSrc: "/img/road-signs/warnings/end-of-dual-carriageway.png",
-        alt: "Dual carriageways quiz",
+        alt: "end of dual carriageway sign",
         question: "What does this sign mean?",
         answers: [
             { val: null, correct: false, answer: "Road narrows ahead" },
@@ -60,7 +60,7 @@ var questions = [
     },
     {
         imgSrc: "/img/road-signs/warnings/two-way-traffic.png",
-        alt: "Dual carriageways quiz",
+        alt: "two way traffic sign",
         question: "What does this sign mean?",
         answers: [
             { val: null, correct: false, answer: "No overtaking" },
@@ -77,7 +77,7 @@ var questions = [
     },
     {
         imgSrc: "/img/road-signs/warnings/slip-lane.png",
-        alt: "Dual carriageways quiz",
+        alt: "slip lane sign",
         question:
             "True or False. You always join a dual carriageway from a slip lane",
         answers: [
@@ -89,7 +89,7 @@ var questions = [
     },
     {
         imgSrc: "/img/road-signs/warnings/tractor.png",
-        alt: "Dual carriageways quiz",
+        alt: "tractor sign",
         question:
             "True or False. You may see slow moving traffic on dual carriageways",
         answers: [
@@ -101,7 +101,7 @@ var questions = [
     },
     {
         imgSrc: "/img/road-signs/motorways/keep-two-chevrons.jpg",
-        alt: "Dual carriageways quiz",
+        alt: "two second rule sign",
         question:
             "What is the typical stopping distance for a car travelling at 70mph?",
         answers: [
@@ -115,7 +115,7 @@ var questions = [
     },
     {
         imgSrc: "/img/driving-images/direction-and-tourist-signs/non-merging-slip-lane-from-dual-carriageway.jpg",
-        alt: "Dual carriageways quiz",
+        alt: "lane gain sign",
         question: "Which lane should you use on a dual carriageway?",
         answers: [
             { val: null, correct: false, answer: "The right lane" },

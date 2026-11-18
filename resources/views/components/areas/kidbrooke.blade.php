@@ -1,24 +1,30 @@
 <x-areas.wrapper>
     <x-slot:content>
-        <h1 class="title is-size-5">Experienced driving instructor in Kidbrooke and Blackheath</h1>
+        <h1 class="title is-size-5">Experienced driving instructor in Kidbrooke</h1>
 
-        <p>Driving lessons in Blackheath and Kidbrooke are available at certain times of the week. Please get in touch
+        <p>Reliable and enjoyable driving lessons in Kidbrooke available Monday to Saturday.
+            Please get
+            in touch
             using the <a href="/contact" class="has-text-weight-bold">contact form</a>
             for details of current availability.</p>
-        <p>If you are considering taking driving lessons and live in Kidbrooke or Blackheath your nearest driving test
+        <p>Friendly and punctual driving instructor providing enjoyable lessons packed full of driver skills training.
+            Full theory test support is provided, including free membership to <a
+                href="chislehurstdrivingschool.theorytestpro.co.uk">Theory test pro</a>.
+        </p>
+        <p>Your nearest driving test
             centres are <a href="/tests/routes/bromley">Bromley</a>, <a href="/tests/routes/sidcup">Sidcup</a> or
-            Belvedere.</p>
-        <p>The nearest theory test centre is also in Sidcup, just near footscray high street.</p>
-
+            Belvedere. The nearest theory test centre is also in Sidcup, just near footscray high street.</p>
+        <p><a href="/contact" class="button is-link has-text-weight-bold">Book a driving lesson</a></p>
     </x-slot:content>
     <x-slot:case_study>
-        <h2 class="tag title is-warning has-text-weight-bold is-size-5">Red routes</h2>
+        <h2 class="tag title is-warning has-text-weight-bold is-medium" id="red-routes">Driving lessons in Kidbrooke</h2>
         <div class="columns">
             <div class="column">
                 <div class="content">
+                    <p class="title is-size-6">How to deal with red routes</p>
                     <p>
                         If you are taking driving lessons in Kidbrooke and Blackheath you will see sometimes single or
-                        double red lines. Red routes are generally controlled by <abbr
+                        double red lines along the edge of the carriageway. Red routes are generally controlled by <abbr
                             title="Transport for London">TFL</abbr> who are also able to set their own speed limits.
                     </p>
                     <p>On both single and double <span class="has-text-warning has-text-weight-bold">yellow lines</span>
@@ -45,13 +51,13 @@
             <div class="column">
                 <figure class="has-text-centered mb-2">
                     <img src="{{ asset('/img/driving-images/on-street-parking/red-route-no-stopping-at-any-time.jpg') }}"
-                        alt="Red routes signage" class="" style="width:200px;">
+                        alt="Red routes signage" class="image">
                     <figcaption>Double red lines</figcaption>
                 </figure>
 
                 <figure class="has-text-centered mb-2">
                     <img src="{{ asset('/img/driving-images/on-street-parking/red-route-stopping-restriction.jpg') }}"
-                        alt="Red routes sign" class="" style="width:200px;">
+                        alt="Red routes sign" class="image">
                     <figcaption>Single red lines</figcaption>
                 </figure>
             </div>

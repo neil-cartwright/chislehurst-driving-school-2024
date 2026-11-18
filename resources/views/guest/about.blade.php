@@ -17,7 +17,12 @@
             <div class="column is-6 mb-6">
                 <div class="content">
                     <h1 class="title is-size-6">About</h1>
-                    <p>Chislehurst Driving School has just one employee, me. I live in Chislehurst with my wife and
+
+                    <figure class="m-2 is-pulled-right is-hidden-tablet" style="max-width:40%;">
+                        <img src="{{ asset('/img/photos/neil-cartwright-portrait.webp') }}" alt="neil cartwright ADI">
+                    </figure>
+                    <p>Chislehurst Driving School doesn't have a team of driving instructors. It's just me. I live in
+                        Chislehurst with my wife and
                         daughter.</p>
                     <p class="has-text-weight-bold">History</p>
                     <p>I've been a fully qualified driving instructor since 2004. I started out working for Lanes, in
@@ -43,19 +48,39 @@
                         backgrounds and helping them develop what can be a completely life-changing skill. </p>
                     <p>It's especially rewarding to help someone learn to drive who <span class="is-italic">really</span>
                         needs
-                        their licence, for example, to get a new job somewhere out of town. </p>
-                    <p>My least favourite part of the job is currently the testing process. It's become quite challenging to
+                        their licence, for example, to help to get a new job somewhere. </p>
+                    <p>My least favourite part of the job is currently the testing process. Since Covid it's become quite
+                        challenging to
                         prepare and motivate people for tests with such long waiting times. Hopefully the DVSA will improve
                         the situation soon.
                     </p>
 
-                    <p class="has-text-weight-bold">Other jobs</p>
-                    <p>I'm also a part time web-developer.</p>
+                    <p class="has-text-weight-bold">Timeline</p>
+                    <ul>
+                        <li>1992 Passed driving test in Loughton, Essex</li>
+                        <li>1996 Graduated Middlesex University</li>
+                        <li>1997-2001 Travelled Australia, India and UK</li>
+                        <li>2004 Qualified as Approved Driving Instructor</li>
+                        <li>2005 Worked with Lanes Driving School in Bromley</li>
+                        <li>2006 Worked with AA Driving School in Greenwich and Lewisham</li>
+                        <li>2008 Started Charlton Driving School in South East London</li>
+                        <li>2009 Joined Institute of Advanced Motorists</li>
+                        <li>2010 Obtained RoSPA (silver) award. I also helped to form SELKent Driving Instructor Association
+                        </li>
+                        <li>2011 Passed Full Motorcycle test in Erith</li>
+                        <li>2012 Queen Elizabeth Foundation: Teaching disabled drivers and drivers with Special Driver
+                            Educational
+                            needs. Also began learning BSL.</li>
+                        <li>2014 Started Chislehurst Driving School</li>
+                        <li>2019 DVSA Grade A Check test</li>
+                        <li>2022 also working as Front end web developer in Richmond</li>
+                    </ul>
+                    <p>I currently work full-time as a driving instructor.</p>
                 </div>
 
             </div>
             <div class="column is-3">
-                <figure class="has-text-centered mb-4">
+                <figure class="has-text-centered mb-4 is-hidden-mobile">
                     <img src="{{ asset('/img/photos/neil-cartwright-portrait.webp') }}" alt="neil cartwright ADI"
                         style="max-width:300px;">
                     <figcaption>Neil, ADI since 2004</figcaption>

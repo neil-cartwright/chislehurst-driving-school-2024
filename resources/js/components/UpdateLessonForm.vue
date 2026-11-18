@@ -65,26 +65,26 @@
                     <div class="field is-grouped is-grouped-multiline">
                         <label class="label mr-2">Payment era</label>
                         <div class="control">
-                            <label for="2023">
-                                2025
+                            <label for="72">
+                                72
                                 <input
                                     type="radio"
                                     name="payment_era"
-                                    value="20251"
-                                    id="2023"
+                                    value="72"
+                                    id="72"
                                     class="mr-2"
                                     v-model="formData.payment_era"
                                     checked
                                 />
                             </label>
-                            <label for="2024">
-                                2026
+                            <label for="75">
+                                75
                                 <input
                                     type="radio"
                                     name="payment_era"
                                     v-model="formData.payment_era"
-                                    value="20252"
-                                    id="2024"
+                                    value="75"
+                                    id="75"
                                 />
                             </label>
                         </div>
@@ -383,22 +383,22 @@ const selectedLessonCharge = computed(() => {
 
     switch (rate) {
         case 50:
-            result = 38;
+            result = era == 72 ? 38 : 40;
             break;
         case 100:
-            result = era == 20251 ? 68 : 72;
+            result = era == 72 ? 72 : 75;
             break;
         case 500:
-            result = era == 20251 ? 65 : 69;
+            result = era == 72 ? 69 : 72;
             break;
         case 1000:
-            result = era == 20251 ? 65 : 67;
+            result = era == 72 ? 67 : 70;
             break;
         case "test":
             result = 125;
             break;
         default:
-            result = 65;
+            result = 72;
     }
 
     return result;

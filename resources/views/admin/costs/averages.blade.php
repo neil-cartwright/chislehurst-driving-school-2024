@@ -44,38 +44,38 @@
                         </thead>
                         <tbody>
                             @foreach ($lessons as $month => $lesson)
-                                @php
+                                @if ($month)
+                                    @php
+                                        $sumGross = $lesson->sum('lesson_charge');
+                                        $sumCosts = $costs[$month]->sum('amount');
+                                        $sumNet = round($sumGross - $sumCosts);
 
-                                    $sumIncome = $lesson->sum('lesson_charge');
-                                    $sumCosts = $costs[$month]->sum('amount');
-                                    $sumNet = round($sumIncome - $sumCosts);
+                                        array_push($totalIncome, $sumGross);
+                                        array_push($totalCosts, $sumCosts);
+                                        array_push($totalNet, $sumNet);
 
-                                    array_push($totalIncome, $sumIncome);
-                                    array_push($totalCosts, $sumCosts);
-                                    array_push($totalNet, $sumNet);
+                                        $monthNum = $carbon::parse($lesson[0]->lesson_date)->format('m');
+                                        $yearNum = $carbon::parse($lesson[0]->lesson_date)->format('Y');
+                                    @endphp
+                                    <tr>
+                                        <td>
+                                            <a
+                                                href="/admin/lessons/find/{{ $carbon::parse($month)->format('m') }}/{{ $carbon::parse($lesson[0]->lesson_date)->format('Y') }}">
+                                                {{ $month }}
+                                                {{ $carbon::parse($lesson[0]->lesson_date)->format('y') }}
+                                            </a>
 
-                                    $monthNum = $carbon::parse($lesson[0]->lesson_date)->format('m');
-                                    $yearNum = $carbon::parse($lesson[0]->lesson_date)->format('Y');
-
-                                @endphp
-                                <tr>
-                                    <td>
-                                        <a
-                                            href="/admin/lessons/find/{{ $carbon::parse($month)->format('m') }}/{{ $carbon::parse($lesson[0]->lesson_date)->format('Y') }}">
-                                            {{ $month }}
-                                            {{ $carbon::parse($lesson[0]->lesson_date)->format('y') }}
-                                        </a>
-
-                                    </td>
-                                    <td>&pound;{{ round($sumIncome, 2) }}
-                                    </td>
-                                    <td>£{{ $lesson->sum('discountGiven') }}</td>
-                                    <td>£{{ round($sumIncome, 2) - $lesson->sum('discountGiven') }}</td>
-                                    <td><a
-                                            href="/admin/costs/show/{{ $monthNum }}/{{ $yearNum }}">&pound;{{ round($sumCosts, 2) }}</a>
-                                    </td>
-                                    <td>&pound;{{ round($sumNet, 2) }}</td>
-                                </tr>
+                                        </td>
+                                        <td>&pound;{{ round($sumGross, 2) }}
+                                        </td>
+                                        <td>£{{ $lesson->sum('discountGiven') }}</td>
+                                        <td>£{{ round($sumGross, 2) - $lesson->sum('discountGiven') }}</td>
+                                        <td><a
+                                                href="/admin/costs/show/{{ $monthNum }}/{{ $yearNum }}">&pound;{{ round($sumCosts, 2) }}</a>
+                                        </td>
+                                        <td>&pound;{{ round($sumNet, 2) }}</td>
+                                    </tr>
+                                @endif
                             @endforeach
 
                         </tbody>
